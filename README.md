@@ -262,5 +262,5 @@ not straightforward.
 
  [ISSUE_TEMPLATE](doc/template/ISSUE_TEMPLATE_example.md)
 
-## License
+## License information
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgitlab.com%2FID-Chain%2Fidc-core.svg?type=large)](https://app.fossa.io/projects/git%2Bgitlab.com%2FID-Chain%2Fidc-core?ref=badge_large)
