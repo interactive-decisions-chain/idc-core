@@ -14,15 +14,6 @@ Features
 * Static PoS
 * Segwit
 * Smart contract
-* New PHI2 PoW/PoS hybrid algorithm
-
-  * [Banking layer](#)
-
-  * [Proof of file storage (Distributed file storage (DFS))](doc/Technical-description-of-the-implementation-of-a-distributed-file-storage.md)
-
-    * [DFS Testnet](doc/dfs-testnet.md)
-
-
 
 The IDC-Core Project is a decentralized peer-to-peer banking financial platform, created under an open source license, featuring a built-in cryptocurrency, end-to-end encrypted messaging and decentralized marketplace. The decentralized network aims to provide anonymity and privacy for everyone through a simple user-friendly interface by taking care of all the advanced cryptography in the background.
 
@@ -265,7 +256,9 @@ not straightforward.
 
  We try to prompt our users for the basic information We always need for new issues.
  Please fill out the issue template below and submit it to our discord channel
-  <a href="https://discord.gg/ndUg9va"><img src="https://discordapp.com/api/guilds/364500397999652866/embed.png" alt="Discord server" /></a>
+
+  <a href="https://discord.gg/YVaZjxr"><img src="https://discordapp.com/api/guilds/495520786241683456/embed.png" alt="Discord server" /></a>
+
 
  [ISSUE_TEMPLATE](doc/template/ISSUE_TEMPLATE_example.md)
 
