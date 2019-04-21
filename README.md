@@ -22,7 +22,6 @@ Features
 
     * [DFS Testnet](doc/dfs-testnet.md)
 
-* ~~PHI1612 PoW/PoS hybrid algorithm~~
 
 
 The IDC-Core Project is a decentralized peer-to-peer banking financial platform, created under an open source license, featuring a built-in cryptocurrency, end-to-end encrypted messaging and decentralized marketplace. The decentralized network aims to provide anonymity and privacy for everyone through a simple user-friendly interface by taking care of all the advanced cryptography in the background.
