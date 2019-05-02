@@ -4,7 +4,7 @@
 
 IDC-Core is GNU AGPLv3 licensed.
 
-[Website](https://id-chain.org) — [Block Explorer](https://explore.id-chain.org/) — [Blog](https://reddit.com/r/IDChain) — [Forum](https://bitcointalk.org/index.php?topic=____________) — [Telegram](https://t.me/IDCOfficialChat) — [Twitter](https://twitter.com/IDChain)
+[Website](https://www.id-chain.org) — [Block Explorer](https://explorer.id-chain.org/) — [Blog](https://www.reddit.com/user/ID_Chain) — [Forum](https://bitcointalk.org/index.php?topic=____________) — [Telegram](https://t.me/IDC-Official) — [Twitter](https://twitter.com/IDChain_Team)
 
 Features
 =============
