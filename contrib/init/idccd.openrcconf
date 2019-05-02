@@ -1,0 +1,26 @@
+# /etc/conf.d/idccd: config file for /etc/init.d/idccd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/idcc/idcc.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/idccd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/idccd.pid"
+
+# Where to write idccd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/idccd"
+
+# User and group to own idccd process
+#BITCOIND_USER="idcc"
+#BITCOIND_GROUP="idcc"
+
+# Path to idccd executable
+#BITCOIND_BIN="/usr/bin/idccd"
+
+# Nice value to run idccd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
