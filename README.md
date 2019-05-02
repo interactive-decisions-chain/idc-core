@@ -28,7 +28,7 @@ The IDC-Core Project is a decentralized peer-to-peer banking financial platform,
 | PoW Block Time | `120s`   |
 | PoW Reward | `10 IDC` |
 | PoS Reward | `1 IDC` |
-| Stake Time | `36 hours` |
+| Stake Time | `48 hours` |
 | Masternode Requirement | `20,000 IDC` |
 | Masternode Reward | `20% PoW/PoS` |
 | Port | `31569` |
