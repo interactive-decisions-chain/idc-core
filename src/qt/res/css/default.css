@@ -4,7 +4,7 @@
 
 
 WalletFrame {
-	background: #ffffff url(':/images/walletFrame_bg') repeat top right; 
+	background: #ffffff url(':/images/walletFrame_bg') repeat top right;
     border-top: 0px solid #000;
     margin:0;
     padding:0;
@@ -856,12 +856,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
     border:0;
 }
 
-/* About Lux Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About Lux Contents */
+/* About IDCC Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About IDCC Contents */
     margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About Lux text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About IDCC text */
     margin-right:10px;
 }
 
@@ -1143,7 +1143,7 @@ QWidget .QFrame#frameDarksend .QPushButton#runAutoDenom { /* No idea why this bu
     qproperty-geometry: rect(0 0 0 0);
 }
 
-QWidget .QFrame#frameDarksend .QPushButton#toggleDarksend { /* Start Luxsend Mixing */
+QWidget .QFrame#frameDarksend .QPushButton#toggleDarksend { /* Start IDCCsend Mixing */
     qproperty-geometry: rect(115 268 295 40);
     font-size:15px;
     font-weight:bold;
@@ -1703,7 +1703,7 @@ QCalendarWidget QAbstractItemView:disabled { /* Calendar widget days not in mont
     color:#818181;
 }
 
-QDialog#Bip38ToolDialog  .QToolButton { 
+QDialog#Bip38ToolDialog  .QToolButton {
     background-color:transparent;
     border: 0;
     outline: 0;

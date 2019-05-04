@@ -26,15 +26,15 @@ class CBlockHeader
 public:
     // header
     static const int32_t CURRENT_VERSION=7;
-    
+
     int32_t nVersion;
     uint256 hashPrevBlock;
     uint256 hashMerkleRoot;
     uint32_t nTime;
     uint32_t nBits;
     uint32_t nNonce;
-    uint256 hashStateRoot; // lux
-    uint256 hashUTXORoot; // lux
+    uint256 hashStateRoot; // idcc
+    uint256 hashUTXORoot; // idcc
 
     CBlockHeader()
     {
@@ -56,8 +56,8 @@ public:
         //When it is fixed, this check should look like this
         //if(this->nVersion & VersionBitsMask(Params().GetConsensus(), Consensus::SMART_CONTRACTS_HARDFORK))
         if ((this->nVersion & (1 << 30)) != 0) {
-            READWRITE(hashStateRoot);       // lux
-            READWRITE(hashUTXORoot);        // lux
+            READWRITE(hashStateRoot);       // idcc
+            READWRITE(hashUTXORoot);        // idcc
         }
     }
 
@@ -69,8 +69,8 @@ public:
         nTime = 0;
         nBits = 0;
         nNonce = 0;
-        hashStateRoot = 0; // lux
-        hashUTXORoot = 0; // lux
+        hashStateRoot = 0; // idcc
+        hashUTXORoot = 0; // idcc
     }
 
     bool IsNull() const
@@ -140,8 +140,8 @@ public:
         block.nTime          = nTime;
         block.nBits          = nBits;
         block.nNonce         = nNonce;
-        block.hashStateRoot  = hashStateRoot; // lux
-        block.hashUTXORoot   = hashUTXORoot; // lux
+        block.hashStateRoot  = hashStateRoot; // idcc
+        block.hashUTXORoot   = hashUTXORoot; // idcc
         return block;
     }
 

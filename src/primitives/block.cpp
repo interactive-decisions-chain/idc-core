@@ -127,8 +127,8 @@ std::string CBlock::ToString() const
         hashPrevBlock.ToString(),
         hashMerkleRoot.ToString(),
         nTime, nBits, nNonce,
-        hashStateRoot.ToString(), // lux
-        hashUTXORoot.ToString(), // lux
+        hashStateRoot.ToString(), // idcc
+        hashUTXORoot.ToString(), // idcc
         vtx.size());
     for (unsigned int i = 0; i < vtx.size(); i++)
     {
