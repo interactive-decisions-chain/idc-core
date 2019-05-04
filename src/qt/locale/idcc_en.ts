@@ -18,40 +18,40 @@
     </message>
 </context>
 <context>
-    <name>AddEditLuxNode</name>
+    <name>AddEditIDCCNode</name>
     <message>
-        <location filename="../forms/addeditluxnode.ui" line="+14"/>
-        <location filename="../forms/ui_addeditluxnode.h" line="+153"/>
-        <source>Add/Edit LuxNodes Node</source>
+        <location filename="../forms/addeditidccnode.ui" line="+14"/>
+        <location filename="../forms/ui_addeditidccnode.h" line="+153"/>
+        <source>Add/Edit IDCCNodes Node</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <location filename="../forms/ui_addeditluxnode.h" line="+1"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter an Alias (friendly name) for your LuxNodes Node and its address (either clearnet IP and port or Tor onion address and port).  The address should be in the format 123.456.789.123:9999 or akjdsafxjkhasdf.onion:9999.  A masternode private key and a collateral address will both be automatically generated for you.  You must send exactly 20000 IDCC to the collateral address.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../forms/ui_addeditidccnode.h" line="+1"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter an Alias (friendly name) for your IDCCNodes Node and its address (either clearnet IP and port or Tor onion address and port).  The address should be in the format 123.456.789.123:9999 or akjdsafxjkhasdf.onion:9999.  A masternode private key and a collateral address will both be automatically generated for you.  You must send exactly 20000 IDCC to the collateral address.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
-        <location filename="../forms/ui_addeditluxnode.h" line="+1"/>
+        <location filename="../forms/ui_addeditidccnode.h" line="+1"/>
         <source>Alias</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+17"/>
-        <location filename="../forms/ui_addeditluxnode.h" line="+1"/>
+        <location filename="../forms/ui_addeditidccnode.h" line="+1"/>
         <source>Address</source>
         <translation type="unfinished">Address</translation>
     </message>
     <message>
         <location line="+68"/>
-        <location filename="../forms/ui_addeditluxnode.h" line="+2"/>
+        <location filename="../forms/ui_addeditidccnode.h" line="+2"/>
         <source>&amp;OK</source>
         <translation type="unfinished">&amp;OK</translation>
     </message>
     <message>
         <location line="+7"/>
-        <location filename="../forms/ui_addeditluxnode.h" line="+1"/>
+        <location filename="../forms/ui_addeditidccnode.h" line="+1"/>
         <source>&amp;Cancel</source>
         <translation type="unfinished">&amp;Cancel</translation>
     </message>
@@ -227,12 +227,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your LUX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your IDCC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your LUX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your IDCC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -292,7 +292,7 @@
 <context>
     <name>AdminAuthorization</name>
     <message>
-        <location filename="../../lux-installer/src/adminauthorization_x11.cpp" line="+197"/>
+        <location filename="../../idcc-installer/src/adminauthorization_x11.cpp" line="+197"/>
         <source>Enter Password</source>
         <translation type="unfinished"></translation>
     </message>
@@ -392,7 +392,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LUX&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR IDCC&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -404,7 +404,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process.Remember that encrypting your wallet cannot fully protect your LUXs from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process.Remember that encrypting your wallet cannot fully protect your IDCCs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -500,7 +500,7 @@
     <message>
         <location line="+22"/>
         <location filename="../forms/ui_bip38tooldialog.h" line="-34"/>
-        <source>Enter a Lux Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a IDCC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -514,7 +514,7 @@
     <message>
         <location line="-425"/>
         <location filename="../forms/ui_bip38tooldialog.h" line="-48"/>
-        <source>The LUX address to sign the message with</source>
+        <source>The IDCC address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -566,7 +566,7 @@
     <message>
         <location line="+80"/>
         <location filename="../forms/ui_bip38tooldialog.h" line="+9"/>
-        <source>Sign the message to prove you own this LUX address</source>
+        <source>Sign the message to prove you own this IDCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -604,13 +604,13 @@
     <message>
         <location line="+47"/>
         <location filename="../forms/ui_bip38tooldialog.h" line="+3"/>
-        <source>The LUX address the message was signed with</source>
+        <source>The IDCC address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+100"/>
         <location filename="../forms/ui_bip38tooldialog.h" line="+9"/>
-        <source>Verify the message to ensure it was signed with the specified LUX address</source>
+        <source>Verify the message to ensure it was signed with the specified IDCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -734,7 +734,7 @@
     </message>
     <message>
         <location line="+202"/>
-        <source>New lux-qt version available: &lt;br /&gt; %1. &lt;br /&gt;</source>
+        <source>New idcc-qt version available: &lt;br /&gt; %1. &lt;br /&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -809,7 +809,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Check whether there is an updated wallet from Luxcore</source>
+        <source>Check whether there is an updated wallet from IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1005,7 +1005,7 @@
     </message>
     <message numerus="yes">
         <location line="+469"/>
-        <source>%n active connection(s) to Luxcore network</source>
+        <source>%n active connection(s) to IDCCcore network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1072,17 +1072,17 @@
     <message>
         <location line="-543"/>
         <location line="+1056"/>
-        <source>Luxcore</source>
+        <source>IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-800"/>
-        <source>Send coins to a LUX address</source>
+        <source>Send coins to a IDCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and lux: URIs)</source>
+        <source>Request payments (generates QR codes and idcc: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1097,27 +1097,27 @@
     </message>
     <message>
         <location line="+46"/>
-        <source>&amp;About Luxcore</source>
+        <source>&amp;About IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Luxcore</source>
+        <source>Show information about IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Modify configuration options for LUX</source>
+        <source>Modify configuration options for IDCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>Sign messages with your LUX addresses to prove you own them</source>
+        <source>Sign messages with your IDCC addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified LUX addresses</source>
+        <source>Verify messages to ensure they were signed with specified IDCC addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1162,7 +1162,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a LUX: URI or payment request</source>
+        <source>Open a IDCC: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1182,17 +1182,17 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Converter for LUX Smart Contract addresses</source>
+        <source>Converter for IDCC Smart Contract addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Luxcore help message to get a list with possible LUX command-line options</source>
+        <source>Show the IDCCcore help message to get a list with possible IDCC command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+256"/>
-        <source>Luxcore client</source>
+        <source>IDCCcore client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1383,8 +1383,8 @@
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../lux.cpp" line="+546"/>
-        <source>A fatal error occurred. LUX can no longer continue safely and will quit.</source>
+        <location filename="../idcc.cpp" line="+546"/>
+        <source>A fatal error occurred. IDCC can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1623,12 +1623,12 @@
     </message>
     <message>
         <location line="+603"/>
-        <source>Not all transactions will be shown and block explorer is not available while running in pruned mode. To view all transactions you need to set txindex=1 in the configuration file (lux.conf).</source>
+        <source>Not all transactions will be shown and block explorer is not available while running in pruned mode. To view all transactions you need to set txindex=1 in the configuration file (idcc.conf).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Luxcore Blockchain Explorer</source>
+        <source>IDCCcore Blockchain Explorer</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1836,7 +1836,7 @@
     <message>
         <location line="+23"/>
         <location filename="../forms/ui_coincontroldialog.h" line="-4"/>
-        <source>Luxsend Rounds</source>
+        <source>IDCCsend Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1936,7 +1936,7 @@
     </message>
     <message>
         <location line="+187"/>
-        <source>Non-anonymized input selected. &lt;b&gt;Luxsend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use Luxsend, please deselect all non-nonymized inputs first and then check Luxsend checkbox again.</source>
+        <source>Non-anonymized input selected. &lt;b&gt;IDCCsend will be disabled.&lt;/b&gt;&lt;br&gt;&lt;br&gt;If you still want to use IDCCsend, please deselect all non-nonymized inputs first and then check IDCCsend checkbox again.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2440,7 +2440,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Gas price: LUX price per gas unit. Default = %1, Min = %2</source>
+        <source>Gas price: IDCC price per gas unit. Default = %1, Min = %2</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2448,93 +2448,93 @@
     <name>DarksendConfig</name>
     <message>
         <location filename="../forms/darksendconfig.ui" line="+14"/>
-        <location filename="../forms/luxsendconfig.ui" line="+14"/>
+        <location filename="../forms/idccsendconfig.ui" line="+14"/>
         <location filename="../forms/ui_darksendconfig.h" line="+97"/>
         <source>Configure Darksend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <location filename="../forms/luxsendconfig.ui" line="+12"/>
+        <location filename="../forms/idccsendconfig.ui" line="+12"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
         <source>Basic Privacy</source>
         <translation type="unfinished">Basic Privacy</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
         <source>High Privacy</source>
         <translation type="unfinished">High Privacy</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
         <source>Maximum Privacy</source>
         <translation type="unfinished">Maximum Privacy</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
         <source>Please select a privacy level.</source>
         <translation type="unfinished">Please select a privacy level.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 LUX</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 IDCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 LUX</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 IDCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
         <source>Use 16 separate masternodes</source>
         <translation type="unfinished">Use 16 separate masternodes</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
-        <source>This option is the quickest and will cost about ~0.025 LUX to anonymize 10000 LUX</source>
+        <source>This option is the quickest and will cost about ~0.025 IDCC to anonymize 10000 IDCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
-        <source>This option is moderately fast and will cost about 0.05 LUX to anonymize 10000 LUX</source>
+        <source>This option is moderately fast and will cost about 0.05 IDCC to anonymize 10000 IDCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation type="unfinished">This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location filename="../forms/luxsendconfig.ui" line="+13"/>
+        <location filename="../forms/idccsendconfig.ui" line="+13"/>
         <location filename="../forms/ui_darksendconfig.h" line="+1"/>
-        <source>0.1 LUX per 10000 LUX you anonymize.</source>
+        <source>0.1 IDCC per 10000 IDCC you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../darksendconfig.cpp" line="+42"/>
         <location line="+14"/>
         <location line="+14"/>
-        <location filename="../luxsendconfig.cpp" line="+42"/>
+        <location filename="../idccsendconfig.cpp" line="+42"/>
         <location line="+14"/>
         <location line="+14"/>
         <source>Darksend Configuration</source>
@@ -2542,27 +2542,27 @@
     </message>
     <message>
         <location line="-27"/>
-        <location filename="../luxsendconfig.cpp" line="-27"/>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening LUX&apos;s configuration screen.</source>
+        <location filename="../idccsendconfig.cpp" line="-27"/>
+        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening IDCC&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <location filename="../luxsendconfig.cpp" line="+14"/>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening LUX&apos;s configuration screen.</source>
+        <location filename="../idccsendconfig.cpp" line="+14"/>
+        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening IDCC&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <location filename="../luxsendconfig.cpp" line="+14"/>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening LUX&apos;s configuration screen.</source>
+        <location filename="../idccsendconfig.cpp" line="+14"/>
+        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening IDCC&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DialogMaster</name>
     <message>
-        <location filename="../../lux-installer/src/dialogmaster.cpp" line="+140"/>
+        <location filename="../../idcc-installer/src/dialogmaster.cpp" line="+140"/>
         <source>Information</source>
         <translation type="unfinished">Information</translation>
     </message>
@@ -2676,7 +2676,7 @@
     </message>
     <message>
         <location line="+68"/>
-        <source>The entered address &quot;%1&quot; is not a valid LUX address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid IDCC address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2866,12 +2866,12 @@
     </message>
     <message>
         <location line="+5"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;&lt;b&gt;&quot;Licensor&quot;&lt;/b&gt; means Luxcore, with its main address                    located at Suite 3 Level 27, Governor Macquarie Tower, 1 Farrer Place, Sydney, NSW, 2000.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;&lt;b&gt;&quot;Licensor&quot;&lt;/b&gt; means IDCCcore, with its main address                    located at Suite 3 Level 27, Governor Macquarie Tower, 1 Farrer Place, Sydney, NSW, 2000.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;&lt;b&gt;&quot;Software&quot;&lt;/b&gt; means (a) all of the contents of the files,                    disk(s), CD-ROM(s) or other media with which this Agreement is provided, including but not                    limited to (i) Luxcore or third party computer information or software; (ii) digital images,                    stock photographs, clip art, sounds or other artistic works (&quot;Stock Files&quot;); (iii) related                    explanatory written materials or files (&quot;Documentation&quot;); and (iv) fonts; and (b) upgrades,                    modified versions, updates, additions, and copies of the Software, if any, licensed to you by                    Luxcore (collectively, &quot;Updates&quot;). &lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;&lt;b&gt;&quot;Software&quot;&lt;/b&gt; means (a) all of the contents of the files,                    disk(s), CD-ROM(s) or other media with which this Agreement is provided, including but not                    limited to (i) IDCCcore or third party computer information or software; (ii) digital images,                    stock photographs, clip art, sounds or other artistic works (&quot;Stock Files&quot;); (iii) related                    explanatory written materials or files (&quot;Documentation&quot;); and (iv) fonts; and (b) upgrades,                    modified versions, updates, additions, and copies of the Software, if any, licensed to you by                    IDCCcore (collectively, &quot;Updates&quot;). &lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2886,7 +2886,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;&lt;b&gt;&quot;Permitted Number&quot;&lt;/b&gt; means one (1) unless otherwise indicated under                    a valid license (e.g. volume license) granted by Luxcore.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;&lt;b&gt;&quot;Permitted Number&quot;&lt;/b&gt; means one (1) unless otherwise indicated under                    a valid license (e.g. volume license) granted by IDCCcore.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2901,7 +2901,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;As long as you comply with the terms of this End User License Agreement (the                    &quot;Agreement&quot;), Luxcore grants to you a non-exclusive license to Use the Software for the purposes described                     in the Documentation. Some third party materials included in the Software may be subject to other terms and                     conditions, which are typically found in a &quot;Read Me&quot; file located near such materials.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;As long as you comply with the terms of this End User License Agreement (the                    &quot;Agreement&quot;), IDCCcore grants to you a non-exclusive license to Use the Software for the purposes described                     in the Documentation. Some third party materials included in the Software may be subject to other terms and                     conditions, which are typically found in a &quot;Read Me&quot; file located near such materials.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2921,7 +2921,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;You may install one copy of the Software on your computer file server for the                    purpose of downloading and installing the Software onto other computers within your internal network up to                    the Permitted Number or you may install one copy of the Software on a computer file server within your internal                    network for the sole and exclusive purpose of using the Software through commands, data or instructions (e.g.                    scripts) from an unlimited number of computers on your internal network. No other network use is permitted,                    including but not limited to, using the Software either directly or through commands, data or instructions from                    or to a computer not part of your internal network, for internet or web hosting services or by any user not licensed                    to use this copy of the Software through a valid license from Luxcore; and&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;You may install one copy of the Software on your computer file server for the                    purpose of downloading and installing the Software onto other computers within your internal network up to                    the Permitted Number or you may install one copy of the Software on a computer file server within your internal                    network for the sole and exclusive purpose of using the Software through commands, data or instructions (e.g.                    scripts) from an unlimited number of computers on your internal network. No other network use is permitted,                    including but not limited to, using the Software either directly or through commands, data or instructions from                    or to a computer not part of your internal network, for internet or web hosting services or by any user not licensed                    to use this copy of the Software through a valid license from IDCCcore; and&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2961,7 +2961,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;To the extent that the Software includes Luxcore Luxgate software, (i) you may customize the                    installer for such software in accordance with the restrictions found at &lt;a href=&quot;https://luxcore.io&quot;&gt;https://luxcore.io&lt;/a&gt;                    (e.g., installation of additional plug-in and help files); however, you may not otherwise alter or modify the installer program                    or create a new installer for any of such software, (ii) such software is licensed and distributed by Luxcore, and (iii) you are                    not authorized to use any plug-in or enhancement that permits you to save modifications to a any format file with such software;                    however, such use is authorized with Luxcore, Luxcore Luxgate, and other current and future Luxcore products. For information on                    how to distribute Luxgate please refer to the sections entitled &quot;How to Distribute Luxgate&quot; at                    &lt;a href=&quot;https://luxcore.io&quot;&gt;https://luxcore.io&lt;/a&gt;.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;To the extent that the Software includes IDCCcore IDCCgate software, (i) you may customize the                    installer for such software in accordance with the restrictions found at &lt;a href=&quot;https://idcccore.io&quot;&gt;https://idcccore.io&lt;/a&gt;                    (e.g., installation of additional plug-in and help files); however, you may not otherwise alter or modify the installer program                    or create a new installer for any of such software, (ii) such software is licensed and distributed by IDCCcore, and (iii) you are                    not authorized to use any plug-in or enhancement that permits you to save modifications to a any format file with such software;                    however, such use is authorized with IDCCcore, IDCCcore IDCCgate, and other current and future IDCCcore products. For information on                    how to distribute IDCCgate please refer to the sections entitled &quot;How to Distribute IDCCgate&quot; at                    &lt;a href=&quot;https://idcccore.io&quot;&gt;https://idcccore.io&lt;/a&gt;.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2971,17 +2971,17 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;The Software and any copies that you are authorized by Luxcore to make are the intellectual property                     of and are owned by Luxcore and its suppliers. The structure, organization and code of the Software are the valuable trade secrets                     and confidential information of Luxcore and its suppliers. The Software is protected by copyright, including without limitation by                     Australia Copyright Law, international treaty provisions and applicable laws in the country in which it is being used. You may not                     copy the Software, except as set forth in Section 2 (&quot;Software License&quot;).&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;The Software and any copies that you are authorized by IDCCcore to make are the intellectual property                     of and are owned by IDCCcore and its suppliers. The structure, organization and code of the Software are the valuable trade secrets                     and confidential information of IDCCcore and its suppliers. The Software is protected by copyright, including without limitation by                     Australia Copyright Law, international treaty provisions and applicable laws in the country in which it is being used. You may not                     copy the Software, except as set forth in Section 2 (&quot;Software License&quot;).&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;Any copies that you are permitted to make pursuant to this Agreement must contain the same copyright                    and other proprietary notices that appear on or in the Software. You also agree not to reverse engineer, decompile, disassemble or                    otherwise attempt to discover the source code of the Software except to the extent you may be expressly permitted to decompile under                    applicable law, it is essential to do so in order to achieve operability of the Software with another software program, and you have                    first requested Luxcore to provide the information necessary to achieve such operability and Luxcore has not made such information                    available.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;Any copies that you are permitted to make pursuant to this Agreement must contain the same copyright                    and other proprietary notices that appear on or in the Software. You also agree not to reverse engineer, decompile, disassemble or                    otherwise attempt to discover the source code of the Software except to the extent you may be expressly permitted to decompile under                    applicable law, it is essential to do so in order to achieve operability of the Software with another software program, and you have                    first requested IDCCcore to provide the information necessary to achieve such operability and IDCCcore has not made such information                    available.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;Luxcore has the right to impose reasonable conditions and to request a reasonable fee before providing                     such information. Any information supplied by Luxcore or obtained by you, as permitted hereunder, may only be used by you for the                     purpose described herein and may not be disclosed to any third party or used to create any software which is substantially similar                     to the expression of the Software. Requests for information should be directed to the Luxcore Customer Support Department. Trademarks                     shall be used in accordance with accepted trademark practice, including identification of trademarks owners&apos; names. Trademarks can only                     be used to identify printed output produced by the Software and such use of any trademark does not give you any rights of ownership in                     that trademark. Except as expressly stated above, this Agreement does not grant you any intellectual property rights in the Software.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;IDCCcore has the right to impose reasonable conditions and to request a reasonable fee before providing                     such information. Any information supplied by IDCCcore or obtained by you, as permitted hereunder, may only be used by you for the                     purpose described herein and may not be disclosed to any third party or used to create any software which is substantially similar                     to the expression of the Software. Requests for information should be directed to the IDCCcore Customer Support Department. Trademarks                     shall be used in accordance with accepted trademark practice, including identification of trademarks owners&apos; names. Trademarks can only                     be used to identify printed output produced by the Software and such use of any trademark does not give you any rights of ownership in                     that trademark. Except as expressly stated above, this Agreement does not grant you any intellectual property rights in the Software.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3001,7 +3001,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;If the Software supports multiple platforms or languages, if you receive the Software on multiple media, if                     you otherwise receive multiple copies of the Software, or if you received the Software bundled with other software, the total number of                     your computers on which all versions of the Software are installed may not exceed the Permitted Number. You may not, rent, lease, sublicense,                     lend or transfer any versions or copies of such Software you do not Use. If the Software is an Update to a previous version of the Software,                     you must possess a valid license to such previous version in order to Use the Update. You may continue to Use the previous version of the Software                     on your computer after you receive the Update to assist you in the transition to the Update, provided that: the Update and the previous version                     are installed on the same computer; the previous version or copies thereof are not transferred to another party or computer unless all copies of                     the Update are also transferred to such party or computer; and you acknowledge that any obligation Luxcore may have to support the previous version                     of the Software may be ended upon availability of the Update.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;If the Software supports multiple platforms or languages, if you receive the Software on multiple media, if                     you otherwise receive multiple copies of the Software, or if you received the Software bundled with other software, the total number of                     your computers on which all versions of the Software are installed may not exceed the Permitted Number. You may not, rent, lease, sublicense,                     lend or transfer any versions or copies of such Software you do not Use. If the Software is an Update to a previous version of the Software,                     you must possess a valid license to such previous version in order to Use the Update. You may continue to Use the previous version of the Software                     on your computer after you receive the Update to assist you in the transition to the Update, provided that: the Update and the previous version                     are installed on the same computer; the previous version or copies thereof are not transferred to another party or computer unless all copies of                     the Update are also transferred to such party or computer; and you acknowledge that any obligation IDCCcore may have to support the previous version                     of the Software may be ended upon availability of the Update.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3011,7 +3011,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;The Software is being delivered to you &quot;AS IS&quot; and Luxcore makes no warranty as to its use or performance. Luxcore AND                     ITS SUPPLIERS DO NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE SOFTWARE. EXCEPT FOR ANY WARRANTY, CONDITION,                     REPRESENTATION OR TERM TO THE EXTENT TO WHICH THE SAME CANNOT OR MAY NOT BE EXCLUDED OR LIMITED BY LAW APPLICABLE TO YOU IN YOUR JURISDICTION, Luxcore                     AND ITS SUPPLIERS MAKE NO WARRANTIES CONDITIONS, REPRESENTATIONS, OR TERMS (EXPRESS OR IMPLIED WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR OTHERWISE)                     AS TO ANY MATTER INCLUDING WITHOUT LIMITATION NONINFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY, INTEGRATION, SATISFACTORY QUALITY, OR FITNESS FOR ANY                     PARTICULAR PURPOSE.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;The Software is being delivered to you &quot;AS IS&quot; and IDCCcore makes no warranty as to its use or performance. IDCCcore AND                     ITS SUPPLIERS DO NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE SOFTWARE. EXCEPT FOR ANY WARRANTY, CONDITION,                     REPRESENTATION OR TERM TO THE EXTENT TO WHICH THE SAME CANNOT OR MAY NOT BE EXCLUDED OR LIMITED BY LAW APPLICABLE TO YOU IN YOUR JURISDICTION, IDCCcore                     AND ITS SUPPLIERS MAKE NO WARRANTIES CONDITIONS, REPRESENTATIONS, OR TERMS (EXPRESS OR IMPLIED WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR OTHERWISE)                     AS TO ANY MATTER INCLUDING WITHOUT LIMITATION NONINFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY, INTEGRATION, SATISFACTORY QUALITY, OR FITNESS FOR ANY                     PARTICULAR PURPOSE.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3021,7 +3021,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;If the product you have received with this license is pre-commercial release or beta Software (&quot;Pre-release Software&quot;), then                     the following Section applies. To the extent that any provision in this Section is in conflict with any other term or condition in this Agreement, this                     Section shall supercede such other term(s) and condition(s) with respect to the Pre-release Software, but only to the extent necessary to resolve the conflict.                     You acknowledge that the Software is a pre-release version, does not represent final product from Luxcore, and may contain bugs, errors and other problems that                     could cause system or other failures and data loss. Consequently, the Pre-release Software is provided to you &quot;AS-IS&quot;, and Luxcore disclaims any warranty or                     liability obligations to you of any kind. WHERE LEGALLY LIABILITY CANNOT BE EXCLUDED FOR PRE-RELEASE SOFTWARE, BUT IT MAY BE LIMITED, LUXCORE&apos;S LIABILITY AND                     THAT OF ITS SUPPLIERS SHALL BE LIMITED TO THE SUM OF FIFTY DOLLARS (U.S. $50) IN TOTAL. You acknowledge that Luxcore has not promised or guaranteed to you that                     Pre-release Software will be announced or made available to anyone in the future, that Luxcore has no express or implied obligation to you to announce or                     introduce the Pre-release Software and that Luxcore may not introduce a product similar to or compatible with the Pre-release Software. Accordingly, you                     acknowledge that any research or development that you perform regarding the Pre-release Software or any product associated with the Pre-release Software is                     done entirely at your own risk. During the term of this Agreement, if requested by Luxcore, you will provide feedback to Luxcore regarding testing and use of                     the Pre-release Software, including error or bug reports. If you have been provided the Pre-release Software pursuant to a separate written agreement, such as                     the Luxcore Serial Agreement for Unreleased Products, your use of the Software is also governed by such agreement. You agree that you may not and certify that                     you will not sublicense, lease, loan, rent, or transfer the Pre-release Software. Upon receipt of a later unreleased version of the Pre-release Software or                     release by Luxcore of a publicly released commercial version of the Software, whether as a stand-alone product or as part of a larger product, you agree to                     return or destroy all earlier Pre-release Software received from Luxcore and to abide by the terms of the End User License Agreement for any such later versions                     of the Pre-release Software. Notwithstanding anything in this Section to the contrary, if you are located outside the United States of America or Canada, you agree                     that you will return or destroy all unreleased versions of the Pre-release Software within thirty (30) days of the completion of your testing of the Software                     when such date is earlier than the date for Luxcore&apos;s first commercial shipment of the publicly released (commercial) Software.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;If the product you have received with this license is pre-commercial release or beta Software (&quot;Pre-release Software&quot;), then                     the following Section applies. To the extent that any provision in this Section is in conflict with any other term or condition in this Agreement, this                     Section shall supercede such other term(s) and condition(s) with respect to the Pre-release Software, but only to the extent necessary to resolve the conflict.                     You acknowledge that the Software is a pre-release version, does not represent final product from IDCCcore, and may contain bugs, errors and other problems that                     could cause system or other failures and data loss. Consequently, the Pre-release Software is provided to you &quot;AS-IS&quot;, and IDCCcore disclaims any warranty or                     liability obligations to you of any kind. WHERE LEGALLY LIABILITY CANNOT BE EXCLUDED FOR PRE-RELEASE SOFTWARE, BUT IT MAY BE LIMITED, IDCCCORE&apos;S LIABILITY AND                     THAT OF ITS SUPPLIERS SHALL BE LIMITED TO THE SUM OF FIFTY DOLLARS (U.S. $50) IN TOTAL. You acknowledge that IDCCcore has not promised or guaranteed to you that                     Pre-release Software will be announced or made available to anyone in the future, that IDCCcore has no express or implied obligation to you to announce or                     introduce the Pre-release Software and that IDCCcore may not introduce a product similar to or compatible with the Pre-release Software. Accordingly, you                     acknowledge that any research or development that you perform regarding the Pre-release Software or any product associated with the Pre-release Software is                     done entirely at your own risk. During the term of this Agreement, if requested by IDCCcore, you will provide feedback to IDCCcore regarding testing and use of                     the Pre-release Software, including error or bug reports. If you have been provided the Pre-release Software pursuant to a separate written agreement, such as                     the IDCCcore Serial Agreement for Unreleased Products, your use of the Software is also governed by such agreement. You agree that you may not and certify that                     you will not sublicense, lease, loan, rent, or transfer the Pre-release Software. Upon receipt of a later unreleased version of the Pre-release Software or                     release by IDCCcore of a publicly released commercial version of the Software, whether as a stand-alone product or as part of a larger product, you agree to                     return or destroy all earlier Pre-release Software received from IDCCcore and to abide by the terms of the End User License Agreement for any such later versions                     of the Pre-release Software. Notwithstanding anything in this Section to the contrary, if you are located outside the United States of America or Canada, you agree                     that you will return or destroy all unreleased versions of the Pre-release Software within thirty (30) days of the completion of your testing of the Software                     when such date is earlier than the date for IDCCcore&apos;s first commercial shipment of the publicly released (commercial) Software.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3031,7 +3031,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;IN NO EVENT WILL LUXCORE OR ITS SUPPLIERS BE LIABLE TO YOU FOR ANY DAMAGES, CLAIMS OR COSTS WHATSOEVER OR ANY CONSEQUENTIAL, INDIRECT,                    INCIDENTAL DAMAGES, OR ANY LOST PROFITS OR LOST SAVINGS, EVEN IF AN LUXCORE REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, DAMAGES, CLAIMS OR                    COSTS OR FOR ANY CLAIM BY ANY THIRD PARTY. THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE EXTENT PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. LUXCORE&apos;S                    AGGREGATE LIABILITY AND THAT OF ITS SUPPLIERS UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT PAID FOR THE SOFTWARE, IF ANY. Nothing                    contained in this Agreement limits Luxcore&apos;s liability to you in the event of death or personal injury resulting from Luxcore&apos;s negligence or for the tort of                    deceit (fraud). Luxcore is acting on behalf of its suppliers for the purpose of disclaiming, excluding and/or limiting obligations, warranties and liability as                    provided in this Agreement, but in no other respects and for no other purpose. For further information, please see the jurisdiction specific information at the                    end of this Agreement, if any, or contact Luxcore&apos;s Customer Support Department.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;IN NO EVENT WILL IDCCCORE OR ITS SUPPLIERS BE LIABLE TO YOU FOR ANY DAMAGES, CLAIMS OR COSTS WHATSOEVER OR ANY CONSEQUENTIAL, INDIRECT,                    INCIDENTAL DAMAGES, OR ANY LOST PROFITS OR LOST SAVINGS, EVEN IF AN IDCCCORE REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS, DAMAGES, CLAIMS OR                    COSTS OR FOR ANY CLAIM BY ANY THIRD PARTY. THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE EXTENT PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. IDCCCORE&apos;S                    AGGREGATE LIABILITY AND THAT OF ITS SUPPLIERS UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT PAID FOR THE SOFTWARE, IF ANY. Nothing                    contained in this Agreement limits IDCCcore&apos;s liability to you in the event of death or personal injury resulting from IDCCcore&apos;s negligence or for the tort of                    deceit (fraud). IDCCcore is acting on behalf of its suppliers for the purpose of disclaiming, excluding and/or limiting obligations, warranties and liability as                    provided in this Agreement, but in no other respects and for no other purpose. For further information, please see the jurisdiction specific information at the                    end of this Agreement, if any, or contact IDCCcore&apos;s Customer Support Department.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3061,7 +3061,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;If any part of this Agreement is found void and unenforceable, it will not affect the validity of the balance of the Agreement,                    which shall remain valid and enforceable according to its terms. This Agreement shall not prejudice the statutory rights of any party dealing as a consumer.                    This Agreement may only be modified by a writing signed by an authorized officer of Luxcore. Updates may be licensed to you by Luxcore with additional or                    different terms. This is the entire agreement between Luxcore and you relating to the Software and it supersedes any prior representations, discussions,                    undertakings, communications or advertising relating to the Software.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;If any part of this Agreement is found void and unenforceable, it will not affect the validity of the balance of the Agreement,                    which shall remain valid and enforceable according to its terms. This Agreement shall not prejudice the statutory rights of any party dealing as a consumer.                    This Agreement may only be modified by a writing signed by an authorized officer of IDCCcore. Updates may be licensed to you by IDCCcore with additional or                    different terms. This is the entire agreement between IDCCcore and you relating to the Software and it supersedes any prior representations, discussions,                    undertakings, communications or advertising relating to the Software.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3092,7 +3092,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>227.7202-1 through 227.7202-4, as applicable, the                 Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and                 (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright                 laws of the United States. For U.S. Government End Users, Luxcore agrees to comply with all applicable equal opportunity laws including, if appropriate, the                 provisions of Executive Order 11246, as amended, Section 402 of the Vietnam Era Veterans Readjustment Assistance Act of 1974 (38 USC 4212), and Section 503                 of the Rehabilitation Act of 1973, as amended, and the regulations at 41 CFR Parts 60-1 through 60-60, 60-250, and 60-741. The affirmative action clause and                 regulations contained in the preceding sentence shall be incorporated by reference in this Agreement.&lt;/p&gt;</source>
+        <source>227.7202-1 through 227.7202-4, as applicable, the                 Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and                 (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright                 laws of the United States. For U.S. Government End Users, IDCCcore agrees to comply with all applicable equal opportunity laws including, if appropriate, the                 provisions of Executive Order 11246, as amended, Section 402 of the Vietnam Era Veterans Readjustment Assistance Act of 1974 (38 USC 4212), and Section 503                 of the Rehabilitation Act of 1973, as amended, and the regulations at 41 CFR Parts 60-1 through 60-60, 60-250, and 60-741. The affirmative action clause and                 regulations contained in the preceding sentence shall be incorporated by reference in this Agreement.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3102,22 +3102,22 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;If you are a business or organization, you agree that upon request from Luxcore or Luxcore &apos;s authorized representative, you will                    within thirty (30) days fully document and certify that use of any and all Luxcore Software at the time of the request is in conformity with your valid licenses                    from Luxcore.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;If you are a business or organization, you agree that upon request from IDCCcore or IDCCcore &apos;s authorized representative, you will                    within thirty (30) days fully document and certify that use of any and all IDCCcore Software at the time of the request is in conformity with your valid licenses                    from IDCCcore.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;If you have any questions regarding this Agreement or if you wish to request any information from Luxcore please use the address                     and contact information included with this product to contact the Luxcore office serving your jurisdiction.&lt;/p&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;If you have any questions regarding this Agreement or if you wish to request any information from IDCCcore please use the address                     and contact information included with this product to contact the IDCCcore office serving your jurisdiction.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&lt;p style=&quot;line-height:130&quot;&gt;Luxcore, Luxgate, and all other Luxcore&apos;s products are either registered trademarks or trademarks of Luxcore in the United States,                     Europe and/or other countries.&lt;/p&gt;&lt;br&gt;&lt;br&gt;</source>
+        <source>&lt;p style=&quot;line-height:130&quot;&gt;IDCCcore, IDCCgate, and all other IDCCcore&apos;s products are either registered trademarks or trademarks of IDCCcore in the United States,                     Europe and/or other countries.&lt;/p&gt;&lt;br&gt;&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
-        <source>lux_</source>
+        <source>idcc_</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3125,7 +3125,7 @@
         <location line="+2"/>
         <location line="+8"/>
         <location line="+5"/>
-        <source>luxVersion</source>
+        <source>idccVersion</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3186,7 +3186,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Luxcore</source>
+        <source>IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3197,7 +3197,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>About Luxcore</source>
+        <source>About IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3283,19 +3283,19 @@
     <message>
         <location line="+9"/>
         <location filename="../forms/ui_intro.h" line="+1"/>
-        <source>Welcome to Luxcore.</source>
+        <source>Welcome to IDCCcore.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <location filename="../forms/ui_intro.h" line="+1"/>
-        <source>As this is the first time the program is launched, you can choose where Luxcore will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where IDCCcore will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
         <location filename="../forms/ui_intro.h" line="+1"/>
-        <source>Luxcore will download and store a copy of the LUX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>IDCCcore will download and store a copy of the IDCC block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3312,7 +3312,7 @@
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Luxcore</source>
+        <source>IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3402,17 +3402,17 @@
     </message>
 </context>
 <context>
-    <name>LuxNodeConfigDialog</name>
+    <name>IDCCNodeConfigDialog</name>
     <message>
-        <location filename="../forms/luxnodeconfigdialog.ui" line="+14"/>
-        <location filename="../forms/ui_luxnodeconfigdialog.h" line="+61"/>
-        <source>LuxNodes Node Configuration Template</source>
+        <location filename="../forms/idccnodeconfigdialog.ui" line="+14"/>
+        <location filename="../forms/ui_idccnodeconfigdialog.h" line="+61"/>
+        <source>IDCCNodes Node Configuration Template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <location filename="../forms/ui_luxnodeconfigdialog.h" line="+2"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This pane shows an example lux.conf template with the necessary masternode settings.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <location filename="../forms/ui_idccnodeconfigdialog.h" line="+2"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This pane shows an example idcc.conf template with the necessary masternode settings.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -3586,13 +3586,13 @@
     <message>
         <location line="+116"/>
         <location filename="../forms/ui_modaloverlay.h" line="+2"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Luxcore network after a connection is established. Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Luxcore network, as detailed below.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IDCCcore network after a connection is established. Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the IDCCcore network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
         <location filename="../forms/ui_modaloverlay.h" line="+1"/>
-        <source>This means that recent transactions will not be visible, and the balance will not be up-to-date until this process has completed. Attempting to spend LUX during this time will not be accepted by the network!!!</source>
+        <source>This means that recent transactions will not be visible, and the balance will not be up-to-date until this process has completed. Attempting to spend IDCC during this time will not be accepted by the network!!!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3735,7 +3735,7 @@
     <message>
         <location line="-74"/>
         <location filename="../forms/ui_multisenddialog.h" line="-4"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other LUX addresses after it matures.</source>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other IDCC addresses after it matures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4004,7 +4004,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+90"/>
         <location filename="../forms/ui_optionsdialog.h" line="+13"/>
-        <source>Automatically open the LUX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the IDCC client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4034,13 +4034,13 @@ Please check the address and try again.</source>
     <message>
         <location line="-230"/>
         <location filename="../forms/ui_optionsdialog.h" line="-20"/>
-        <source>Automatically start LUX after logging in to the system.</source>
+        <source>Automatically start IDCC after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <location filename="../forms/ui_optionsdialog.h" line="+2"/>
-        <source>&amp;Start LUX on system login</source>
+        <source>&amp;Start IDCC on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4076,7 +4076,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+15"/>
         <location filename="../forms/ui_optionsdialog.h" line="+2"/>
-        <source>Amount of LUX to keep anonymized</source>
+        <source>Amount of IDCC to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4106,13 +4106,13 @@ Please check the address and try again.</source>
     <message>
         <location line="+7"/>
         <location filename="../forms/ui_optionsdialog.h" line="+2"/>
-        <source>Show additional information and buttons for Luxsend on overview screen.</source>
+        <source>Show additional information and buttons for IDCCsend on overview screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <location filename="../forms/ui_optionsdialog.h" line="+2"/>
-        <source>Enable advanced Luxsend interface</source>
+        <source>Enable advanced IDCCsend interface</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4178,7 +4178,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+62"/>
         <location filename="../forms/ui_optionsdialog.h" line="+12"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting LUX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting IDCC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4190,7 +4190,7 @@ Please check the address and try again.</source>
     <message>
         <location line="+17"/>
         <location filename="../forms/ui_optionsdialog.h" line="+6"/>
-        <source>Connect to the LUX network through a SOCKS5 proxy.</source>
+        <source>Connect to the IDCC network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4263,7 +4263,7 @@ Please check the address and try again.</source>
         <location line="+34"/>
         <location filename="../forms/ui_optionsdialog.h" line="+4"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/luxcore/luxcore</source>
+https://www.transifex.com/idcccore/idcccore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4428,7 +4428,7 @@ https://www.transifex.com/luxcore/luxcore</source>
         <location filename="../forms/ui_overviewpage.h" line="+2"/>
         <location line="+56"/>
         <location line="+5"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LUX network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IDCC network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4506,7 +4506,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="-894"/>
         <location filename="../forms/ui_overviewpage.h" line="-30"/>
-        <source>0 LUX / 0 Rounds</source>
+        <source>0 IDCC / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4532,7 +4532,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+23"/>
         <location filename="../forms/ui_overviewpage.h" line="+1"/>
-        <source>Luxsend Balance:</source>
+        <source>IDCCsend Balance:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4556,19 +4556,19 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+516"/>
         <location filename="../forms/ui_overviewpage.h" line="+5"/>
-        <source>Try to manually submit a Luxsend request.</source>
+        <source>Try to manually submit a IDCCsend request.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
         <location filename="../forms/ui_overviewpage.h" line="+4"/>
-        <source>Reset the current status of Luxsend (can interrupt Luxsend if it&apos;s in the process of Mixing, which can cost you money!)</source>
+        <source>Reset the current status of IDCCsend (can interrupt IDCCsend if it&apos;s in the process of Mixing, which can cost you money!)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
         <location filename="../forms/ui_overviewpage.h" line="+3"/>
-        <source>Luxsend</source>
+        <source>IDCCsend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4696,13 +4696,13 @@ https://www.transifex.com/luxcore/luxcore</source>
         <location line="-241"/>
         <location line="+337"/>
         <location line="+126"/>
-        <source>Start Luxsend</source>
+        <source>Start IDCCsend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-460"/>
         <location line="+463"/>
-        <source>Stop Luxsend</source>
+        <source>Stop IDCCsend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4788,7 +4788,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>URI cannot be parsed! This can be caused by an invalid lux address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid idcc address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4803,7 +4803,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="-104"/>
-        <source>Cannot start lux: click-to-pay handler</source>
+        <source>Cannot start idcc: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4905,14 +4905,14 @@ https://www.transifex.com/luxcore/luxcore</source>
 <context>
     <name>ProgressDialog</name>
     <message>
-        <location filename="../../lux-installer/src/forms/progressdialog.ui" line="+17"/>
-        <location filename="../../lux-installer/src/forms/ui_progressdialog.h" line="+71"/>
+        <location filename="../../idcc-installer/src/forms/progressdialog.ui" line="+17"/>
+        <location filename="../../idcc-installer/src/forms/ui_progressdialog.h" line="+71"/>
         <source>Check for Updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
-        <location filename="../../lux-installer/src/forms/ui_progressdialog.h" line="+1"/>
+        <location filename="../../idcc-installer/src/forms/ui_progressdialog.h" line="+1"/>
         <source>Checking for updates…</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4926,7 +4926,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+151"/>
-        <source>Enter a Lux address (e.g. %1)</source>
+        <source>Enter a IDCC address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5060,11 +5060,11 @@ https://www.transifex.com/luxcore/luxcore</source>
         <translation type="unfinished">unknown</translation>
     </message>
     <message>
-        <location filename="../lux.cpp" line="+114"/>
+        <location filename="../idcc.cpp" line="+114"/>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>Luxcore</source>
+        <source>IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5089,14 +5089,14 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+47"/>
-        <source>Luxcore didn&apos;t yet exit safely...</source>
+        <source>IDCCcore didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QPlatformTheme</name>
     <message>
-        <location filename="../luxstrings.cpp" line="+12"/>
+        <location filename="../idccstrings.cpp" line="+12"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5155,9 +5155,9 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
 </context>
 <context>
-    <name>QtLuxUpdater::AtomFeeder</name>
+    <name>QtIDCCUpdater::AtomFeeder</name>
     <message>
-        <location filename="../../lux-installer/src/luxupdater/atomfeeder.cpp" line="+57"/>
+        <location filename="../../idcc-installer/src/idccupdater/atomfeeder.cpp" line="+57"/>
         <source>Check for Updates</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5168,17 +5168,17 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
 </context>
 <context>
-    <name>QtLuxUpdater::ProgressDialog</name>
+    <name>QtIDCCUpdater::ProgressDialog</name>
     <message>
-        <location filename="../../lux-installer/src/progressdialog.cpp" line="+39"/>
+        <location filename="../../idcc-installer/src/progressdialog.cpp" line="+39"/>
         <source>Canceling update check…</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>QtLuxUpdater::UpdateController</name>
+    <name>QtIDCCUpdater::UpdateController</name>
     <message>
-        <location filename="../../lux-installer/src/updatecontroller.cpp" line="+46"/>
+        <location filename="../../idcc-installer/src/updatecontroller.cpp" line="+46"/>
         <location line="+93"/>
         <location line="+12"/>
         <location line="+12"/>
@@ -5231,9 +5231,9 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
 </context>
 <context>
-    <name>QtLuxUpdater::UpdateInfoDialog</name>
+    <name>QtIDCCUpdater::UpdateInfoDialog</name>
     <message>
-        <location filename="../../lux-installer/src/updateinfodialog.cpp" line="+33"/>
+        <location filename="../../idcc-installer/src/updateinfodialog.cpp" line="+33"/>
         <location line="+21"/>
         <source>Updates for %1 are available!</source>
         <translation type="unfinished"></translation>
@@ -5472,7 +5472,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+253"/>
         <location filename="../forms/ui_rpcconsole.h" line="+21"/>
-        <source>Open the LUX debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the IDCC debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5798,7 +5798,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="-47"/>
-        <source>Welcome to the LUX RPC console.</source>
+        <source>Welcome to the IDCC RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6401,7 +6401,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+7"/>
         <location filename="../forms/ui_sendcoinsdialog.h" line="+1"/>
-        <source>0 LUX</source>
+        <source>0 IDCC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6479,13 +6479,13 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="-340"/>
         <location filename="../forms/ui_sendcoinsdialog.h" line="-25"/>
-        <source>If the custom fee is set to 1000 uLUXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uLUXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uLUXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uIDCCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uIDCCs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uIDCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
         <location filename="../forms/ui_sendcoinsdialog.h" line="+4"/>
-        <source>If the custom fee is set to 1000 uLUXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uLUXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uLUXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uIDCCs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uIDCCs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uIDCCs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6493,7 +6493,7 @@ https://www.transifex.com/luxcore/luxcore</source>
         <location line="+13"/>
         <location filename="../forms/ui_sendcoinsdialog.h" line="+4"/>
         <location line="+4"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for LUX transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for IDCC transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6672,7 +6672,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>Warning: Invalid LUX address</source>
+        <source>Warning: Invalid IDCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6814,7 +6814,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+18"/>
         <location filename="../forms/ui_sendcoinsentry.h" line="+2"/>
-        <source>The LUX address to send the payment to</source>
+        <source>The IDCC address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6876,7 +6876,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="-1053"/>
         <location filename="../forms/ui_sendcoinsentry.h" line="-26"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less luxcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less idcccoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6894,7 +6894,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+10"/>
         <location filename="../forms/ui_sendcoinsentry.h" line="+2"/>
-        <source>A message that was attached to the LUX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the LUX network.</source>
+        <source>A message that was attached to the IDCC: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the IDCC network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7033,7 +7033,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The amount in Lux to send. Default = 0.</source>
+        <source>The amount in IDCC to send. Default = 0.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7078,7 +7078,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Gas price: LUX price per gas unit. Default = %1, Min = %2.</source>
+        <source>Gas price: IDCC price per gas unit. Default = %1, Min = %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7159,7 +7159,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Gas price: LUX/gas unit. Default = %1, Min = %2.</source>
+        <source>Gas price: IDCC/gas unit. Default = %1, Min = %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7184,7 +7184,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+22"/>
-        <source>To send %1 you need LUX in address &lt;br /&gt; %2.</source>
+        <source>To send %1 you need IDCC in address &lt;br /&gt; %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7197,7 +7197,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+79"/>
-        <source>Luxcore is shutting down...</source>
+        <source>IDCCcore is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7229,7 +7229,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+18"/>
         <location filename="../forms/ui_signverifymessagedialog.h" line="+2"/>
-        <source>The LUX address to sign the message with</source>
+        <source>The IDCC address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7281,19 +7281,19 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="+21"/>
         <location filename="../forms/ui_signverifymessagedialog.h" line="+4"/>
-        <source>Sign the message to prove you own this LUX address</source>
+        <source>Sign the message to prove you own this IDCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
         <location filename="../forms/ui_signverifymessagedialog.h" line="+11"/>
-        <source>The LUX address the message was signed with</source>
+        <source>The IDCC address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
         <location filename="../forms/ui_signverifymessagedialog.h" line="+10"/>
-        <source>Verify the message to ensure it was signed with the specified LUX address</source>
+        <source>Verify the message to ensure it was signed with the specified IDCC address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7440,12 +7440,12 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="-287"/>
-        <source>Start Luxsend</source>
+        <source>Start IDCCsend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Stop Luxsend</source>
+        <source>Stop IDCCsend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7574,7 +7574,7 @@ https://www.transifex.com/luxcore/luxcore</source>
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LUX network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the IDCC network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7659,7 +7659,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+20"/>
-        <source>Luxsend Balance:</source>
+        <source>IDCCsend Balance:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7669,7 +7669,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 LUX / 0 Rounds</source>
+        <source>0 IDCC / 0 Rounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7704,7 +7704,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+25"/>
-        <source>Try to manually submit a Luxsend request.</source>
+        <source>Try to manually submit a IDCCsend request.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7714,7 +7714,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+19"/>
-        <source>Reset the current status of Luxsend (can interrupt Luxsend if it&apos;s in the process of Mixing, which can cost you money!)</source>
+        <source>Reset the current status of IDCCsend (can interrupt IDCCsend if it&apos;s in the process of Mixing, which can cost you money!)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7724,7 +7724,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+22"/>
-        <source>Luxsend</source>
+        <source>IDCCsend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7737,7 +7737,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Luxcore</source>
+        <source>IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7757,7 +7757,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The Luxcore developers</source>
+        <source>The IDCCcore developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8780,86 +8780,86 @@ https://www.transifex.com/luxcore/luxcore</source>
 <context>
     <name>UpdateInfoDialog</name>
     <message>
-        <location filename="../../lux-installer/src/forms/updateinfodialog.ui" line="+17"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+176"/>
+        <location filename="../../idcc-installer/src/forms/updateinfodialog.ui" line="+17"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+176"/>
         <source>Check for Updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+1"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+1"/>
         <source>There are new updates available! You can install them now or automatically, when you exit the application. If you don&apos;t want to install updates right know, you can install them later.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+1"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+1"/>
         <source>Updates:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+4"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+4"/>
         <source>Component Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="-1"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="-1"/>
         <source>Version</source>
         <translation type="unfinished">Version</translation>
     </message>
     <message>
         <location line="+5"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="-1"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="-1"/>
         <source>Update Size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+3"/>
-        <source>https://github.com/LUX-Core/lux/releases</source>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+3"/>
+        <source>https://github.com/IDCC-Core/idcc/releases</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+1"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+1"/>
         <source>Run with &amp;elevated rights</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
         <source>Close and do nothing. You can install updates later.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
         <source>Install later</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
         <source>You proceed using the application, and as soon as you close it, the updater will start automatically to install the updates.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
         <source>Install On Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
         <source>Closes the application and opens the installer to update the app.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <location filename="../../lux-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
+        <location filename="../../idcc-installer/src/forms/ui_updateinfodialog.h" line="+2"/>
         <source>Install Now</source>
         <translation type="unfinished"></translation>
     </message>
@@ -8884,7 +8884,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     <message>
         <location line="-19"/>
         <location line="+10"/>
-        <source>InstanTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 LUX.</source>
+        <source>InstanTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 IDCC.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -8942,9 +8942,9 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
 </context>
 <context>
-    <name>lux-core</name>
+    <name>idcc-core</name>
     <message>
-        <location filename="../luxstrings.cpp" line="+8"/>
+        <location filename="../idccstrings.cpp" line="+8"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -8970,7 +8970,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Cannot obtain a lock on data directory %s. Luxcore is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. IDCCcore is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9045,12 +9045,12 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in LUX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in IDCC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in LUX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in IDCC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9145,7 +9145,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Rescan aborted by user. Please restart your Luxcore wallet with &apos;-rescan&apos; option. Otherwise, transaction data</source>
+        <source>Rescan aborted by user. Please restart your IDCCcore wallet with &apos;-rescan&apos; option. Otherwise, transaction data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9185,17 +9185,17 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to bind to %s on this computer. Luxcore is probably already running.</source>
+        <source>Unable to bind to %s on this computer. IDCCcore is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to locate enough DarkSend non-denominated funds for this transaction that are not equal 10000 LUX.</source>
+        <source>Unable to locate enough DarkSend non-denominated funds for this transaction that are not equal 10000 IDCC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 LUX.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 IDCC.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9225,7 +9225,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Luxcore will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong IDCCcore will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9415,7 +9415,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2017-%i The LUX-Core Developers</source>
+        <source>Copyright (C) 2017-%i The IDCC-Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9515,7 +9515,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Luxcore</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of IDCCcore</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9860,7 +9860,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>Wallet needed to be rewritten: restart Luxcore to complete</source>
+        <source>Wallet needed to be rewritten: restart IDCCcore to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9895,17 +9895,17 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>&apos;importprivkey&apos; finished successfully. Please restart Luxcore wallet with &apos;-rescan&apos; option. Otherwise, transaction data</source>
+        <source>&apos;importprivkey&apos; finished successfully. Please restart IDCCcore wallet with &apos;-rescan&apos; option. Otherwise, transaction data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&apos;importprivkey&apos; with &apos;Rescan&apos; option finished successfully. Please restart your Luxcore wallet. Otherwise, transaction data</source>
+        <source>&apos;importprivkey&apos; with &apos;Rescan&apos; option finished successfully. Please restart your IDCCcore wallet. Otherwise, transaction data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+301"/>
-        <source>Fee (in LUX/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in IDCC/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9930,7 +9930,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Initialization sanity check failed. Luxcore is shutting down.</source>
+        <source>Initialization sanity check failed. IDCCcore is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9970,7 +9970,7 @@ https://www.transifex.com/luxcore/luxcore</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Keep N LUX anonymized (default: %u)</source>
+        <source>Keep N IDCC anonymized (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
