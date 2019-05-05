@@ -1,5 +1,5 @@
-#ifndef IDDCTRANSACTION_H
-#define IDDCTRANSACTION_H
+#ifndef IDCCTRANSACTION_H
+#define IDCCTRANSACTION_H
 
 #include <libethcore/Transaction.h>
 
@@ -43,16 +43,16 @@ struct VersionVM{
     }
 }__attribute__((__packed__));
 
-class IDDCTransaction : public dev::eth::Transaction{
+class IDCCTransaction : public dev::eth::Transaction{
 
 public:
 
-    IDDCTransaction() : nVout(0) {}
+    IDCCTransaction() : nVout(0) {}
 
-    IDDCTransaction(dev::u256 const& _value, dev::u256 const& _gasPrice, dev::u256 const& _gas, dev::bytes const& _data, dev::u256 const& _nonce = dev::Invalid256):
+    IDCCTransaction(dev::u256 const& _value, dev::u256 const& _gasPrice, dev::u256 const& _gas, dev::bytes const& _data, dev::u256 const& _nonce = dev::Invalid256):
 		dev::eth::Transaction(_value, _gasPrice, _gas, _data, _nonce) {}
 
-    IDDCTransaction(dev::u256 const& _value, dev::u256 const& _gasPrice, dev::u256 const& _gas, dev::Address const& _dest, dev::bytes const& _data, dev::u256 const& _nonce = dev::Invalid256):
+    IDCCTransaction(dev::u256 const& _value, dev::u256 const& _gasPrice, dev::u256 const& _gas, dev::Address const& _dest, dev::bytes const& _data, dev::u256 const& _nonce = dev::Invalid256):
 		dev::eth::Transaction(_value, _gasPrice, _gas, _dest, _data, _nonce) {}
 
     void setHashWith(const dev::h256 hash) { m_hashWith = hash; }

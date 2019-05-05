@@ -1,5 +1,5 @@
-#include "iddcupdater.h"
-#include "iddcupdater_p.h"
+#include "idccupdater.h"
+#include "idccupdater_p.h"
 
 #include <QtCore/QCoreApplication>
 #include <QtCore/QFileInfo>
@@ -11,11 +11,11 @@
 
 std::atomic<bool> isUpdaterRunning(false);
 
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
-Q_LOGGING_CATEGORY(logIDDCUpdater, "IDDCUpdater")
+Q_LOGGING_CATEGORY(logIDCCUpdater, "IDCCUpdater")
 
-IDDCUpdaterPrivate::IDDCUpdaterPrivate(IDDCUpdater *q_ptr) :
+IDCCUpdaterPrivate::IDCCUpdaterPrivate(IDCCUpdater *q_ptr) :
 	QObject(nullptr),
 	q(q_ptr),
 	currentVersion(),
@@ -33,16 +33,16 @@ IDDCUpdaterPrivate::IDDCUpdaterPrivate(IDDCUpdater *q_ptr) :
 {
 	isUpdaterRunning = false;
 	connect(qApp, &QCoreApplication::aboutToQuit,
-			this, &IDDCUpdaterPrivate::onAppAboutToExit,
+			this, &IDCCUpdaterPrivate::onAppAboutToExit,
 			Qt::DirectConnection);
 	connect(scheduler, &SimpleScheduler::scheduleTriggered,
-			this, &IDDCUpdaterPrivate::startUpdateCheck);
+			this, &IDCCUpdaterPrivate::startUpdateCheck);
 }
 
-IDDCUpdaterPrivate::~IDDCUpdaterPrivate()
+IDCCUpdaterPrivate::~IDCCUpdaterPrivate()
 {
 	if (runOnExit)
-		qCWarning(logIDDCUpdater) << "IDDCUpdater destroyed with run on exit active before the application quit";
+		qCWarning(logIDCCUpdater) << "IDCCUpdater destroyed with run on exit active before the application quit";
 
 	if (atomFeeder) {
 		delete atomFeeder;
@@ -55,7 +55,7 @@ IDDCUpdaterPrivate::~IDDCUpdaterPrivate()
 	}
 }
 
-bool IDDCUpdaterPrivate::startUpdateCheck()
+bool IDCCUpdaterPrivate::startUpdateCheck()
 {
 	if (isUpdaterRunning) {
 		return false;
@@ -70,7 +70,7 @@ bool IDDCUpdaterPrivate::startUpdateCheck()
 	atomFeeder = new AtomFeeder(REPOSITORY_URL);
 
 	connect(atomFeeder, &AtomFeeder::getVersionListDone,
-			this, &IDDCUpdaterPrivate::onUpdaterReady);
+			this, &IDCCUpdaterPrivate::onUpdaterReady);
 
 	atomFeeder->start();
 
@@ -81,7 +81,7 @@ bool IDDCUpdaterPrivate::startUpdateCheck()
 	return true;
 }
 
-void IDDCUpdaterPrivate::stopUpdateCheck(int delay, bool async)
+void IDCCUpdaterPrivate::stopUpdateCheck(int delay, bool async)
 {
 	if (atomFeeder) {
 		if (delay > 0) {
@@ -99,36 +99,36 @@ void IDDCUpdaterPrivate::stopUpdateCheck(int delay, bool async)
 	}
 }
 
-QString IDDCUpdaterPrivate::getDownloadUrl(QString version)
+QString IDCCUpdaterPrivate::getDownloadUrl(QString version)
 {
 #if defined(Q_OS_WIN32)
-	//QString fileName = "iddc-qt-win32.zip";
-	QString fileName = "iddc-qt-win.zip";
+	//QString fileName = "idcc-qt-win32.zip";
+	QString fileName = "idcc-qt-win.zip";
 #elif defined(Q_OS_WIN)
-	//QString fileName = "iddc-qt-win64.zip";
-	QString fileName = "iddc-qt-win.zip";
+	//QString fileName = "idcc-qt-win64.zip";
+	QString fileName = "idcc-qt-win.zip";
 #elif defined(Q_OS_OSX)
-	QString fileName = "iddc-qt-mac.dmg";
+	QString fileName = "idcc-qt-mac.dmg";
 #else
-	QString fileName = 1 ? "iddc-qt-linux-16.zip" : "iddc-qt-linux-18.zip";
+	QString fileName = 1 ? "idcc-qt-linux-16.zip" : "idcc-qt-linux-18.zip";
 #endif
 	return "https://gitlab.com/ID-Chain/idc-core/-/archive/" + version + "/" + fileName;
 }
 
-void IDDCUpdaterPrivate::onDownloadProgress(DownloadManager::DownloadProgress progress)
+void IDCCUpdaterPrivate::onDownloadProgress(DownloadManager::DownloadProgress progress)
 {
 
 }
 
-void IDDCUpdaterPrivate::onDownloadFinished(DownloadManager::DownloadProgress progress)
+void IDCCUpdaterPrivate::onDownloadFinished(DownloadManager::DownloadProgress progress)
 {
 
 }
 
-void IDDCUpdaterPrivate::onDownloadCheckSize(DownloadManager::DownloadProgress progress)
+void IDCCUpdaterPrivate::onDownloadCheckSize(DownloadManager::DownloadProgress progress)
 {
 	if (progress.totalSize > 0) {
-		IDDCUpdater::IDDCUpdateInfo updateInfo("IDDC wallet", newVersion, progress.totalSize);
+		IDCCUpdater::IDCCUpdateInfo updateInfo("IDCC wallet", newVersion, progress.totalSize);
 		updateInfos.append(updateInfo);
 
 		if (downloadManager) {
@@ -150,7 +150,7 @@ void IDDCUpdaterPrivate::onDownloadCheckSize(DownloadManager::DownloadProgress p
 	}
 }
 
-void IDDCUpdaterPrivate::onUpdaterReady()
+void IDCCUpdaterPrivate::onUpdaterReady()
 {
 	if (atomFeeder) {
 		normalExit = true;
@@ -164,7 +164,7 @@ void IDDCUpdaterPrivate::onUpdaterReady()
 				if (downloadManager == nullptr) {
 					downloadManager = new DownloadManager(this);
 					connect(downloadManager, &DownloadManager::downloadFinished,
-							this, &IDDCUpdaterPrivate::onDownloadCheckSize);
+							this, &IDCCUpdaterPrivate::onDownloadCheckSize);
 				}
 				newVersion = version;
 				downloadManager->append(getDownloadUrl(version), true);
@@ -186,7 +186,7 @@ void IDDCUpdaterPrivate::onUpdaterReady()
 	}
 }
 
-void IDDCUpdaterPrivate::updaterError()
+void IDCCUpdaterPrivate::updaterError()
 {
 	if (atomFeeder) {
 		normalExit = false;
@@ -201,7 +201,7 @@ void IDDCUpdaterPrivate::updaterError()
 	}
 }
 
-void IDDCUpdaterPrivate::onAppAboutToExit()
+void IDCCUpdaterPrivate::onAppAboutToExit()
 {
 	if (runOnExit) {
 		QFileInfo appInfo(QCoreApplication::applicationFilePath());
@@ -215,7 +215,7 @@ void IDDCUpdaterPrivate::onAppAboutToExit()
 		}
 
 		if (!ok) {
-			qCWarning(logIDDCUpdater) << "Unable to start" << appInfo.absoluteFilePath()
+			qCWarning(logIDCCUpdater) << "Unable to start" << appInfo.absoluteFilePath()
 										<< "with arguments" << runArguments
 										<< "as" << (adminAuth ? "admin/root" : "current user");
 		}

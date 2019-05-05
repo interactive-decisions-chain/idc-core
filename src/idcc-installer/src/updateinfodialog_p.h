@@ -1,7 +1,7 @@
-#ifndef QTIDDCUPDATER_UPDATEINFODIALOG_H
-#define QTIDDCUPDATER_UPDATEINFODIALOG_H
+#ifndef QTIDCCUPDATER_UPDATEINFODIALOG_H
+#define QTIDCCUPDATER_UPDATEINFODIALOG_H
 
-#include "iddcupdater/iddcupdater.h"
+#include "idccupdater/idccupdater.h"
 
 #include <QDialog>
 
@@ -9,7 +9,7 @@ namespace Ui {
 class UpdateInfoDialog;
 }
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
 class UpdateInfoDialog : public QDialog
@@ -24,7 +24,7 @@ public:
 	};
 	Q_ENUM(DialogResult)
 
-	static DialogResult showUpdateInfo(QList<IDDCUpdater::IDDCUpdateInfo> updates,
+	static DialogResult showUpdateInfo(QList<IDCCUpdater::IDCCUpdateInfo> updates,
 									   bool &runAsAdmin,
 									   bool editable,
 									   bool detailed,
@@ -45,4 +45,4 @@ private:
 
 }
 
-#endif // QTIDDCUPDATER_UPDATEINFODIALOG_H
+#endif // QTIDCCUPDATER_UPDATEINFODIALOG_H

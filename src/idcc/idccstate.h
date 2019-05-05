@@ -6,14 +6,14 @@
 #include <crypto/ripemd160.h>
 #include <uint256.h>
 #include <primitives/transaction.h>
-#include <iddc/iddctransaction.h>
+#include <idcc/idcctransaction.h>
 
 #include <libethereum/Executive.h>
 #include <libethcore/SealEngine.h>
 
 #include "chain.h" // CBlockIndex
 
-using OnOpFunc = std::function<void(uint64_t, uint64_t, dev::eth::Instruction, dev::bigint, dev::bigint, 
+using OnOpFunc = std::function<void(uint64_t, uint64_t, dev::eth::Instruction, dev::bigint, dev::bigint,
     dev::bigint, dev::eth::VM*, dev::eth::ExtVMFace const*)>;
 using plusAndMinus = std::pair<dev::u256, dev::u256>;
 using valtype = std::vector<unsigned char>;
@@ -37,7 +37,7 @@ struct ResultExecute{
     CTransaction tx;
 };
 
-namespace iddc{
+namespace idcc{
     template <class DB>
     dev::AddressHash commit(std::unordered_map<dev::Address, Vin> const& _cache, dev::eth::SecureTrieDB<dev::Address, DB>& _state, std::unordered_map<dev::Address, dev::eth::Account> const& _cacheAcc)
     {
@@ -58,15 +58,15 @@ namespace iddc{
 
 class CondensingTX;
 
-class IDDCState : public dev::eth::State {
-    
+class IDCCState : public dev::eth::State {
+
 public:
 
-    IDDCState();
+    IDCCState();
 
-    IDDCState(dev::u256 const& _accountStartNonce, dev::OverlayDB const& _db, const std::string& _path, dev::eth::BaseState _bs = dev::eth::BaseState::PreExisting);
+    IDCCState(dev::u256 const& _accountStartNonce, dev::OverlayDB const& _db, const std::string& _path, dev::eth::BaseState _bs = dev::eth::BaseState::PreExisting);
 
-    ResultExecute execute(dev::eth::EnvInfo const& _envInfo, dev::eth::SealEngineFace const& _sealEngine, IDDCTransaction const& _t, dev::eth::Permanence _p = dev::eth::Permanence::Committed, dev::eth::OnOpFunc const& _onOp = OnOpFunc());
+    ResultExecute execute(dev::eth::EnvInfo const& _envInfo, dev::eth::SealEngineFace const& _sealEngine, IDCCTransaction const& _t, dev::eth::Permanence _p = dev::eth::Permanence::Committed, dev::eth::OnOpFunc const& _onOp = OnOpFunc());
 
     void setRootUTXO(dev::h256 const& _r) { cacheUTXO.clear(); stateUTXO.setRoot(_r); }
 
@@ -80,9 +80,9 @@ public:
 
     dev::OverlayDB& dbUtxo() { return dbUTXO; }
 
-    static const dev::Address createIDDCAddress(dev::h256 hashTx, uint32_t voutNumber);
+    static const dev::Address createIDCCAddress(dev::h256 hashTx, uint32_t voutNumber);
 
-    virtual ~IDDCState(){}
+    virtual ~IDCCState(){}
 
     friend CondensingTX;
 
@@ -119,15 +119,15 @@ private:
 
 
 struct TemporaryState{
-    std::unique_ptr<IDDCState>& globalStateRef;
+    std::unique_ptr<IDCCState>& globalStateRef;
     dev::h256 oldHashStateRoot;
     dev::h256 oldHashUTXORoot;
 
-    TemporaryState(std::unique_ptr<IDDCState>& _globalStateRef) : 
+    TemporaryState(std::unique_ptr<IDCCState>& _globalStateRef) :
         globalStateRef(_globalStateRef),
-        oldHashStateRoot(globalStateRef->rootHash()), 
+        oldHashStateRoot(globalStateRef->rootHash()),
         oldHashUTXORoot(globalStateRef->rootHashUTXO()) {}
-                
+
     void SetRoot(dev::h256 newHashStateRoot, dev::h256 newHashUTXORoot)
     {
         globalStateRef->setRoot(newHashStateRoot);
@@ -151,7 +151,7 @@ class CondensingTX{
 
 public:
 
-    CondensingTX(IDDCState* _state, const std::vector<TransferInfo>& _transfers, const IDDCTransaction& _transaction, std::set<dev::Address> _deleteAddresses = std::set<dev::Address>()) : transfers(_transfers), deleteAddresses(_deleteAddresses), transaction(_transaction), state(_state){}
+    CondensingTX(IDCCState* _state, const std::vector<TransferInfo>& _transfers, const IDCCTransaction& _transaction, std::set<dev::Address> _deleteAddresses = std::set<dev::Address>()) : transfers(_transfers), deleteAddresses(_deleteAddresses), transaction(_transaction), state(_state){}
 
     CTransaction createCondensingTX();
 
@@ -187,9 +187,9 @@ private:
     //So, making this unordered_set could be an attack vector
     const std::set<dev::Address> deleteAddresses;
 
-    const IDDCTransaction& transaction;
+    const IDCCTransaction& transaction;
 
-    IDDCState* state;
+    IDCCState* state;
 
     bool voutOverflow = false;
 

@@ -2,7 +2,7 @@
 #include "../updatecontroller.h"
 #include "../dialogmaster.h"
 #include "../updatecontroller_p.h"
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
 AtomFeeder::AtomFeeder(const QString &url, QObject *parent)
 	:QObject(parent)

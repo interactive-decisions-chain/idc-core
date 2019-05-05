@@ -1,10 +1,10 @@
-#ifndef IDDCUPDATER_ADMINAUTHORISER_H
-#define IDDCUPDATER_ADMINAUTHORISER_H
+#ifndef IDCCUPDATER_ADMINAUTHORISER_H
+#define IDCCUPDATER_ADMINAUTHORISER_H
 
 #include <QtCore/qstring.h>
 #include <QtCore/qstringlist.h>
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
 //! An interface to run programs with elevated rights
@@ -20,4 +20,4 @@ public:
 
 }
 
-#endif // IDDCUPDATER_ADMINAUTHORISER_H
+#endif // IDCCUPDATER_ADMINAUTHORISER_H

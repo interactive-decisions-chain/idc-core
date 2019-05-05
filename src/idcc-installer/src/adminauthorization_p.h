@@ -1,9 +1,9 @@
-#ifndef QTIDDCUPDATER_ADMINAUTHORIZATION_P_H
-#define QTIDDCUPDATER_ADMINAUTHORIZATION_P_H
+#ifndef QTIDCCUPDATER_ADMINAUTHORIZATION_P_H
+#define QTIDCCUPDATER_ADMINAUTHORIZATION_P_H
 
-#include "iddcupdater/adminauthoriser.h"
+#include "idccupdater/adminauthoriser.h"
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
 class AdminAuthorization : public AdminAuthoriser
@@ -15,4 +15,4 @@ public:
 
 }
 
-#endif // QTIDDCUPDATER_ADMINAUTHORIZATION_P_H
+#endif // QTIDCCUPDATER_ADMINAUTHORIZATION_P_H

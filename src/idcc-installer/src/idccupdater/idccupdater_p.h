@@ -1,7 +1,7 @@
-#ifndef IDDCUPDATER_IDDCUPDATER_P_H
-#define IDDCUPDATER_IDDCUPDATER_P_H
+#ifndef IDCCUPDATER_IDCCUPDATER_P_H
+#define IDCCUPDATER_IDCCUPDATER_P_H
 
-#include "iddcupdater.h"
+#include "idccupdater.h"
 #include "simplescheduler_p.h"
 #include "atomfeeder.h"
 #include "downloadmanager.h"
@@ -12,16 +12,16 @@
 
 #include <exception>
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
-class IDDCUpdaterPrivate : public QObject
+class IDCCUpdaterPrivate : public QObject
 {
 public:
-	IDDCUpdater *q;
+	IDCCUpdater *q;
 
 	QString currentVersion;
-	QList<IDDCUpdater::IDDCUpdateInfo> updateInfos;
+	QList<IDCCUpdater::IDCCUpdateInfo> updateInfos;
 	bool normalExit;
 	int lastErrorCode;
 	QByteArray lastErrorLog;
@@ -37,8 +37,8 @@ public:
 	QStringList runArguments;
 	QScopedPointer<AdminAuthoriser> adminAuth;
 
-	IDDCUpdaterPrivate(IDDCUpdater *q_ptr);
-	~IDDCUpdaterPrivate();
+	IDCCUpdaterPrivate(IDCCUpdater *q_ptr);
+	~IDCCUpdaterPrivate();
 
 	bool startUpdateCheck();
 	void stopUpdateCheck(int delay, bool async);
@@ -58,6 +58,6 @@ private:
 
 }
 
-Q_DECLARE_LOGGING_CATEGORY(logIDDCUpdater)
+Q_DECLARE_LOGGING_CATEGORY(logIDCCUpdater)
 
-#endif // IDDCUPDATER_IDDCUPDATER_P_H
+#endif // IDCCUPDATER_IDCCUPDATER_P_H

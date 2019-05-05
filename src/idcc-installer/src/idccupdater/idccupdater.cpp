@@ -1,107 +1,107 @@
-#include "iddcupdater.h"
-#include "iddcupdater_p.h"
+#include "idccupdater.h"
+#include "idccupdater_p.h"
 #include "../updatecontroller_p.h"
 
 #include <QtCore/QDebug>
 #include <QtCore/QList>
 #include <QtCore/QMap>
 
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
-const QStringList IDDCUpdater::NormalUpdateArguments = {QStringLiteral("--updater")};
-const QStringList IDDCUpdater::PassiveUpdateArguments = {QStringLiteral("--updater"), QStringLiteral("skipPrompt=true")};
-const QStringList IDDCUpdater::HiddenUpdateArguments = {QStringLiteral("--silentUpdate")};
+const QStringList IDCCUpdater::NormalUpdateArguments = {QStringLiteral("--updater")};
+const QStringList IDCCUpdater::PassiveUpdateArguments = {QStringLiteral("--updater"), QStringLiteral("skipPrompt=true")};
+const QStringList IDCCUpdater::HiddenUpdateArguments = {QStringLiteral("--silentUpdate")};
 
-IDDCUpdater::IDDCUpdater(QObject *parent) :
-	IDDCUpdater("", parent)
+IDCCUpdater::IDCCUpdater(QObject *parent) :
+	IDCCUpdater("", parent)
 {}
 
-IDDCUpdater::IDDCUpdater(const QString &currentVersion, QObject *parent) :
+IDCCUpdater::IDCCUpdater(const QString &currentVersion, QObject *parent) :
 	QObject(parent),
-	d(new IDDCUpdaterPrivate(this))
+	d(new IDCCUpdaterPrivate(this))
 {
 	d->currentVersion = currentVersion;
 }
 
-IDDCUpdater::~IDDCUpdater() {}
+IDCCUpdater::~IDCCUpdater() {}
 
-bool IDDCUpdater::exitedNormally() const
+bool IDCCUpdater::exitedNormally() const
 {
 	return d->normalExit;
 }
 
-int IDDCUpdater::errorCode() const
+int IDCCUpdater::errorCode() const
 {
 	return d->lastErrorCode;
 }
 
-QByteArray IDDCUpdater::errorLog() const
+QByteArray IDCCUpdater::errorLog() const
 {
 	return d->lastErrorLog;
 }
 
-bool IDDCUpdater::willRunOnExit() const
+bool IDCCUpdater::willRunOnExit() const
 {
 	return d->runOnExit;
 }
 
-QString IDDCUpdater::currentVersion() const
+QString IDCCUpdater::currentVersion() const
 {
 	return d->currentVersion;
 }
 
-bool IDDCUpdater::isRunning() const
+bool IDCCUpdater::isRunning() const
 {
 	return isUpdaterRunning;
 }
 
-QList<IDDCUpdater::IDDCUpdateInfo> IDDCUpdater::updateInfo() const
+QList<IDCCUpdater::IDCCUpdateInfo> IDCCUpdater::updateInfo() const
 {
 	return d->updateInfos;
 }
 
-bool IDDCUpdater::checkForUpdates()
+bool IDCCUpdater::checkForUpdates()
 {
 	return d->startUpdateCheck();
 }
 
-void IDDCUpdater::abortUpdateCheck(int maxDelay, bool async)
+void IDCCUpdater::abortUpdateCheck(int maxDelay, bool async)
 {
 	d->stopUpdateCheck(maxDelay, async);
 }
 
-int IDDCUpdater::scheduleUpdate(int delaySeconds, bool repeated)
+int IDCCUpdater::scheduleUpdate(int delaySeconds, bool repeated)
 {
 	if((((qint64)delaySeconds) * 1000ll) > (qint64)INT_MAX) {
-		qCWarning(logIDDCUpdater) << "delaySeconds to big to be converted to msecs";
+		qCWarning(logIDCCUpdater) << "delaySeconds to big to be converted to msecs";
 		return 0;
 	}
 	return d->scheduler->startSchedule(delaySeconds * 1000, repeated);
 }
 
-int IDDCUpdater::scheduleUpdate(const QDateTime &when)
+int IDCCUpdater::scheduleUpdate(const QDateTime &when)
 {
 	return d->scheduler->startSchedule(when);
 }
 
-void IDDCUpdater::cancelScheduledUpdate(int taskId)
+void IDCCUpdater::cancelScheduledUpdate(int taskId)
 {
 	d->scheduler->cancelSchedule(taskId);
 }
 
-void IDDCUpdater::runUpdaterOnExit(AdminAuthoriser *authoriser)
+void IDCCUpdater::runUpdaterOnExit(AdminAuthoriser *authoriser)
 {
 	runUpdaterOnExit(NormalUpdateArguments, authoriser);
 }
 
-void IDDCUpdater::runUpdaterOnExit(const QStringList &arguments, AdminAuthoriser *authoriser)
+void IDCCUpdater::runUpdaterOnExit(const QStringList &arguments, AdminAuthoriser *authoriser)
 {
 	d->runOnExit = true;
 	d->runArguments = arguments;
 	d->adminAuth.reset(authoriser);
 }
 
-void IDDCUpdater::cancelExitRun()
+void IDCCUpdater::cancelExitRun()
 {
 	d->runOnExit = false;
 	d->adminAuth.reset();
@@ -109,25 +109,25 @@ void IDDCUpdater::cancelExitRun()
 
 
 
-IDDCUpdater::IDDCUpdateInfo::IDDCUpdateInfo() :
+IDCCUpdater::IDCCUpdateInfo::IDCCUpdateInfo() :
 	name(),
 	version(),
 	size(0ull)
 {}
 
-IDDCUpdater::IDDCUpdateInfo::IDDCUpdateInfo(const IDDCUpdater::IDDCUpdateInfo &other) :
+IDCCUpdater::IDCCUpdateInfo::IDCCUpdateInfo(const IDCCUpdater::IDCCUpdateInfo &other) :
 	name(other.name),
 	version(other.version),
 	size(other.size)
 {}
 
-IDDCUpdater::IDDCUpdateInfo::IDDCUpdateInfo(QString name, QString version, quint64 size) :
+IDCCUpdater::IDCCUpdateInfo::IDCCUpdateInfo(QString name, QString version, quint64 size) :
 	name(name),
 	version(version),
 	size(size)
 {}
 
-QDebug &operator<<(QDebug &debug, const IDDCUpdater::IDDCUpdateInfo &info)
+QDebug &operator<<(QDebug &debug, const IDCCUpdater::IDCCUpdateInfo &info)
 {
 	QDebugStateSaver state(debug);
 	Q_UNUSED(state);

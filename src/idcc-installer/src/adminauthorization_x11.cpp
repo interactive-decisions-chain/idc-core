@@ -60,7 +60,7 @@
 #include <QStandardPaths>
 #include <errno.h>
 
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
 #define SU_COMMAND "/usr/bin/sudo"
 

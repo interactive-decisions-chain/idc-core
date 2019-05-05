@@ -4,7 +4,7 @@
 #include <QtNetwork>
 #include <QtCore>
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
     
 class DownloadManager: public QObject

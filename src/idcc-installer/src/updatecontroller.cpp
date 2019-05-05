@@ -8,15 +8,15 @@
 #include <QtCore/QFileInfo>
 #include "dialogmaster.h"
 
-#include "iddcupdater/iddcupdater_p.h"
+#include "idccupdater/idccupdater_p.h"
 
 std::atomic<bool> running(false);
 std::atomic<bool> wasCanceled(false);
 QPointer<QWidget> win;
-QtIDDCUpdater::UpdateController::DisplayLevel gDisplayLevel;
-QtIDDCUpdater::ProgressDialog *gUpdatesProgress;
+QtIDCCUpdater::UpdateController::DisplayLevel gDisplayLevel;
+QtIDCCUpdater::ProgressDialog *gUpdatesProgress;
 
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
 UpdateController::UpdateController(QObject *parent) :
 	QObject(parent),
@@ -126,7 +126,7 @@ void UpdateController::setDetailedUpdateInfo(bool detailedUpdateInfo)
 	d->detailedInfo = detailedUpdateInfo;
 }
 
-IDDCUpdater *UpdateController::updater() const
+IDCCUpdater *UpdateController::updater() const
 {
 	return d->mainUpdater;
 }
@@ -174,7 +174,7 @@ bool UpdateController::start(DisplayLevel displayLevel)
 				connect(d->checkUpdatesProgress.data(), &ProgressDialog::canceled, this, [this](){
 					wasCanceled = true;
 				});
-				d->checkUpdatesProgress->open(d->mainUpdater, &QtIDDCUpdater::IDDCUpdater::abortUpdateCheck);
+				d->checkUpdatesProgress->open(d->mainUpdater, &QtIDCCUpdater::IDCCUpdater::abortUpdateCheck);
 			}
 		}
 		return true;
@@ -197,7 +197,7 @@ bool UpdateController::cancelUpdate(int maxDelay)
 int UpdateController::scheduleUpdate(int delaySeconds, bool repeated, UpdateController::DisplayLevel displayLevel)
 {
 	if((((qint64)delaySeconds) * 1000) > (qint64)INT_MAX) {
-		qCWarning(logIDDCUpdater) << "delaySeconds to big to be converted to msecs";
+		qCWarning(logIDCCUpdater) << "delaySeconds to big to be converted to msecs";
 		return 0;
 	}
 	return d->scheduler->startSchedule(delaySeconds * 1000, repeated, QVariant::fromValue(displayLevel));
@@ -280,7 +280,7 @@ void UpdateController::checkUpdatesDone(bool hasUpdates, bool hasError)
 			}
 		} else {
 			if(hasError) {
-				qCWarning(logIDDCUpdater) << "maintenancetool process finished with exit code"
+				qCWarning(logIDCCUpdater) << "maintenancetool process finished with exit code"
 											<< d->mainUpdater->errorCode()
 											<< "and error string:"
 											<< d->mainUpdater->errorLog();
@@ -314,7 +314,7 @@ void UpdateController::timerTriggered(const QVariant &parameter)
 
 QIcon UpdateControllerPrivate::getUpdatesIcon()
 {
-	return QIcon::fromTheme(QStringLiteral("system-software-update"), QIcon(QStringLiteral(":/res/icons/iddcupdate.ico")));
+	return QIcon::fromTheme(QStringLiteral("system-software-update"), QIcon(QStringLiteral(":/res/icons/idccupdate.ico")));
 }
 
 UpdateControllerPrivate::UpdateControllerPrivate(UpdateController *q_ptr, QWidget *window) :
@@ -324,7 +324,7 @@ UpdateControllerPrivate::UpdateControllerPrivate(UpdateController *q_ptr, QWidge
 UpdateControllerPrivate::UpdateControllerPrivate(UpdateController *q_ptr, const QString &version, QWidget *window) :
 	q(q_ptr),
 	window(window),
-	mainUpdater(version.isEmpty() ? new IDDCUpdater(q_ptr) : new IDDCUpdater(version, q_ptr)),
+	mainUpdater(version.isEmpty() ? new IDCCUpdater(q_ptr) : new IDCCUpdater(version, q_ptr)),
 	runAdmin(true),
 	adminUserEdit(true),
 	runArgs(QStringLiteral("--updater")),
@@ -337,7 +337,7 @@ UpdateControllerPrivate::UpdateControllerPrivate(UpdateController *q_ptr, const 
 	wasCanceled = false;
     gDisplayLevel = UpdateController::InfoLevel;
 
-	QObject::connect(mainUpdater, &IDDCUpdater::checkUpdatesDone,
+	QObject::connect(mainUpdater, &IDCCUpdater::checkUpdatesDone,
 					 q, &UpdateController::checkUpdatesDone,
 					 Qt::QueuedConnection);
 	QObject::connect(scheduler, &SimpleScheduler::scheduleTriggered,
@@ -352,7 +352,7 @@ UpdateControllerPrivate::UpdateControllerPrivate(UpdateController *q_ptr, const 
 UpdateControllerPrivate::~UpdateControllerPrivate()
 {
 	if(running)
-		qCWarning(logIDDCUpdater) << "UpdaterController destroyed while still running! This can crash your application!";
+		qCWarning(logIDCCUpdater) << "UpdaterController destroyed while still running! This can crash your application!";
 
 	if(checkUpdatesProgress)
 		checkUpdatesProgress->deleteLater();

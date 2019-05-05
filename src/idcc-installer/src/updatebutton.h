@@ -1,12 +1,12 @@
-#ifndef QTIDDCUPDATER_UPDATEBUTTON_H
-#define QTIDDCUPDATER_UPDATEBUTTON_H
+#ifndef QTIDCCUPDATER_UPDATEBUTTON_H
+#define QTIDCCUPDATER_UPDATEBUTTON_H
 
 #include "updatecontroller.h"
 
 #include <qscopedpointer.h>
 #include <qwidget.h>
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
 class UpdateButtonPrivate;
@@ -72,4 +72,4 @@ private:
 
 }
 
-#endif // QTIDDCUPDATER_UPDATEBUTTON_H
+#endif // QTIDCCUPDATER_UPDATEBUTTON_H

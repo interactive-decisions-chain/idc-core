@@ -4,7 +4,7 @@
 
 #include <cstdio>
 
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
 using namespace std;
 
@@ -129,7 +129,7 @@ void DownloadManager::startNextDownload()
         output.setFileName(filename);
         if (!output.open(QIODevice::WriteOnly)) {
 
-            DownloadManager::DownloadProgress progress("IDDC Wallet", "Could not create file for download!");
+            DownloadManager::DownloadProgress progress("IDCC Wallet", "Could not create file for download!");
             emit downloadFinished(progress);
 
             startNextDownload();
@@ -156,7 +156,7 @@ void DownloadManager::onDownloadProgress(qint64 bytesReceived, qint64 bytesTotal
             currentDownload->abort();
         return;
     }
-    DownloadManager::DownloadProgress progress("IDDC Wallet", bytesReceived, bytesTotal);
+    DownloadManager::DownloadProgress progress("IDCC Wallet", bytesReceived, bytesTotal);
     emit downloadProgress(progress);
 }
 
@@ -167,7 +167,7 @@ void DownloadManager::onDownloadFinished()
 
         if (currentDownload->error()) {
             output.remove();
-            DownloadManager::DownloadProgress progress("IDDC Wallet", currentDownload->errorString());
+            DownloadManager::DownloadProgress progress("IDCC Wallet", currentDownload->errorString());
             emit downloadFinished(progress);
         } else {
             // let's check if it was actually a redirect
@@ -175,14 +175,14 @@ void DownloadManager::onDownloadFinished()
                 redirect();
                 output.remove();
             } else {
-                DownloadManager::DownloadProgress progress("IDDC Wallet", 0, 0);
+                DownloadManager::DownloadProgress progress("IDCC Wallet", 0, 0);
                 emit downloadFinished(progress);
                 ++downloadedCount;
             }
         }
     } else {
         if (currentDownload->error() && currentDownload->error() != QNetworkReply::OperationCanceledError) {
-            DownloadManager::DownloadProgress progress("IDDC Wallet", -1, -1);
+            DownloadManager::DownloadProgress progress("IDCC Wallet", -1, -1);
             emit downloadFinished(progress);
         } else {
             // let's check if it was actually a redirect
@@ -190,7 +190,7 @@ void DownloadManager::onDownloadFinished()
                 redirect();
             } else {
                 qint64 totalSize = currentDownload->header(QNetworkRequest::ContentLengthHeader).toInt();
-                DownloadManager::DownloadProgress progress("IDDC Wallet", -1, totalSize);
+                DownloadManager::DownloadProgress progress("IDCC Wallet", -1, totalSize);
                 emit downloadFinished(progress);
             }
         }

@@ -5,7 +5,7 @@
 #include <QApplication>
 #include "dialogmaster.h"
 
-using namespace QtIDDCUpdater;
+using namespace QtIDCCUpdater;
 
 UpdateInfoDialog::UpdateInfoDialog(QWidget *parent) :
 	QDialog(parent),
@@ -44,7 +44,7 @@ UpdateInfoDialog::UpdateInfoDialog(QWidget *parent) :
 
 UpdateInfoDialog::~UpdateInfoDialog(){}
 
-UpdateInfoDialog::DialogResult UpdateInfoDialog::showUpdateInfo(QList<IDDCUpdater::IDDCUpdateInfo> updates, bool &runAsAdmin, bool editable, bool detailed, QWidget *parent)
+UpdateInfoDialog::DialogResult UpdateInfoDialog::showUpdateInfo(QList<IDCCUpdater::IDCCUpdateInfo> updates, bool &runAsAdmin, bool editable, bool detailed, QWidget *parent)
 {
 	if(!detailed) {
 		DialogMaster::MessageBoxInfo boxInfo;
@@ -107,7 +107,7 @@ UpdateInfoDialog::DialogResult UpdateInfoDialog::showUpdateInfo(QList<IDDCUpdate
 	}
 }
 
-void QtIDDCUpdater::UpdateInfoDialog::on_acceptButton_clicked()
+void QtIDCCUpdater::UpdateInfoDialog::on_acceptButton_clicked()
 {
 	if(DialogMaster::questionT(this,
 							   tr("Install Now?"),
@@ -117,7 +117,7 @@ void QtIDDCUpdater::UpdateInfoDialog::on_acceptButton_clicked()
 	}
 }
 
-void QtIDDCUpdater::UpdateInfoDialog::on_delayButton_clicked()
+void QtIDCCUpdater::UpdateInfoDialog::on_delayButton_clicked()
 {
 	DialogMaster::informationT(this,
 							   tr("Install On Exit"),

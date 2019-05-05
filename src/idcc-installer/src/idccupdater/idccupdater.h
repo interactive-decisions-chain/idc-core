@@ -1,5 +1,5 @@
-#ifndef IDDCUPDATER_IDDCUPDATER_H
-#define IDDCUPDATER_IDDCUPDATER_H
+#ifndef IDCCUPDATER_IDCCUPDATER_H
+#define IDCCUPDATER_IDCCUPDATER_H
 
 #include "adminauthoriser.h"
 
@@ -11,12 +11,12 @@
 #include <QtCore/qversionnumber.h>
 #include <QtCore/qscopedpointer.h>
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
-class IDDCUpdaterPrivate;
+class IDCCUpdaterPrivate;
 //! The main updater. Can check for updates and run the current app as updater
-class IDDCUpdater : public QObject
+class IDCCUpdater : public QObject
 {
 	Q_OBJECT
 
@@ -25,11 +25,11 @@ class IDDCUpdater : public QObject
 	//! Specifies whether the updater is currently checking for updates or not
 	Q_PROPERTY(bool running READ isRunning NOTIFY runningChanged)
 	//! Holds extended information about the last update check
-	Q_PROPERTY(QList<IDDCUpdateInfo> updateInfo READ updateInfo NOTIFY updateInfoChanged)
+	Q_PROPERTY(QList<IDCCUpdateInfo> updateInfo READ updateInfo NOTIFY updateInfoChanged)
 
 public:
 	//! Provides information about updates for components
-	struct IDDCUpdateInfo
+	struct IDCCUpdateInfo
 	{
 		//! The name of the component that has an update
 		QString name;
@@ -39,11 +39,11 @@ public:
 		quint64 size;
 
 		//! Default Constructor
-		IDDCUpdateInfo();
+		IDCCUpdateInfo();
 		//! Copy Constructor
-		IDDCUpdateInfo(const IDDCUpdateInfo &other);
+		IDCCUpdateInfo(const IDCCUpdateInfo &other);
 		//! Constructor that takes name, version and size
-		IDDCUpdateInfo(QString name, QString version, quint64 size);
+		IDCCUpdateInfo(QString name, QString version, quint64 size);
 	};
 
 	static const QStringList NormalUpdateArguments;
@@ -51,11 +51,11 @@ public:
 	static const QStringList HiddenUpdateArguments;
 
 	//! Default constructor
-	explicit IDDCUpdater(QObject *parent = nullptr);
+	explicit IDCCUpdater(QObject *parent = nullptr);
 	//! Constructer with an explicitly set currentVersion
-	explicit IDDCUpdater(const QString &currentVersion, QObject *parent = nullptr);
+	explicit IDCCUpdater(const QString &currentVersion, QObject *parent = nullptr);
 	//! Destroyes the updater and kills the update check (if running)
-	~IDDCUpdater();
+	~IDCCUpdater();
 
 	//! Returns `true`, if the updater exited normally
 	bool exitedNormally() const;
@@ -67,12 +67,12 @@ public:
 	//! Returns `true` if will be started on exit
 	bool willRunOnExit() const;
 
-	//! readAcFn{IDDCUpdater::currentVersion}
+	//! readAcFn{IDCCUpdater::currentVersion}
 	QString currentVersion() const;
-	//! readAcFn{IDDCUpdater::running}
+	//! readAcFn{IDCCUpdater::running}
 	bool isRunning() const;
-	//! readAcFn{IDDCUpdater::updateInfo}
-	QList<IDDCUpdateInfo> updateInfo() const;
+	//! readAcFn{IDCCUpdater::updateInfo}
+	QList<IDCCUpdateInfo> updateInfo() const;
 
 public Q_SLOTS:
 	//! Starts checking for updates
@@ -98,19 +98,19 @@ Q_SIGNALS:
 	//! Will be emitted as soon as the updater finished checking for updates
 	void checkUpdatesDone(bool hasUpdates, bool hasError);
 
-	//! notifyAcFn{IDDCUpdater::running}
+	//! notifyAcFn{IDCCUpdater::running}
 	void runningChanged(bool running);
-	//! notifyAcFn{IDDCUpdater::updateInfo}
-	void updateInfoChanged(QList<IDDCUpdater::IDDCUpdateInfo> updateInfo);
+	//! notifyAcFn{IDCCUpdater::updateInfo}
+	void updateInfoChanged(QList<IDCCUpdater::IDCCUpdateInfo> updateInfo);
 
 private:
-	QScopedPointer<IDDCUpdaterPrivate> d;
+	QScopedPointer<IDCCUpdaterPrivate> d;
 };
 
 }
 
-Q_DECLARE_METATYPE(QtIDDCUpdater::IDDCUpdater::IDDCUpdateInfo)
+Q_DECLARE_METATYPE(QtIDCCUpdater::IDCCUpdater::IDCCUpdateInfo)
 
-QDebug &operator<<(QDebug &debug, const QtIDDCUpdater::IDDCUpdater::IDDCUpdateInfo &info);
+QDebug &operator<<(QDebug &debug, const QtIDCCUpdater::IDCCUpdater::IDCCUpdateInfo &info);
 
-#endif // IDDCUPDATER_IDDCUPDATER_H
+#endif // IDCCUPDATER_IDCCUPDATER_H

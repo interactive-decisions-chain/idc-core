@@ -1,5 +1,5 @@
-#ifndef IDDCUPDATER_SIMPLESCHEDULER_P_H
-#define IDDCUPDATER_SIMPLESCHEDULER_P_H
+#ifndef IDCCUPDATER_SIMPLESCHEDULER_P_H
+#define IDCCUPDATER_SIMPLESCHEDULER_P_H
 
 #include <QtCore/QObject>
 #include <QtCore/QVariant>
@@ -7,7 +7,7 @@
 #include <QtCore/QPair>
 #include <QtCore/QHash>
 
-namespace QtIDDCUpdater {
+namespace QtIDCCUpdater {
 
 class SimpleScheduler : public QObject
 {
@@ -35,4 +35,4 @@ private:
 
 }
 
-#endif // IDDCUPDATER_SIMPLESCHEDULER_P_H
+#endif // IDCCUPDATER_SIMPLESCHEDULER_P_H

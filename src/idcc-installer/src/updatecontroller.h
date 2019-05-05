@@ -1,5 +1,5 @@
-#ifndef QTIDDCUPDATER_UPDATECONTROLLER_H
-#define QTIDDCUPDATER_UPDATECONTROLLER_H
+#ifndef QTIDCCUPDATER_UPDATECONTROLLER_H
+#define QTIDCCUPDATER_UPDATECONTROLLER_H
 
 #include <qobject.h>
 #include <qstringlist.h>
@@ -7,10 +7,10 @@
 
 #include <qaction.h>
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
-class IDDCUpdater;
+class IDCCUpdater;
 class UpdateControllerPrivate;
 //! A class to show a controlled update GUI to the user
 class UpdateController : public QObject
@@ -75,7 +75,7 @@ public:
 	bool isDetailedUpdateInfo() const;
 
 	//! Returns the Updater object used by the controller
-	IDDCUpdater *updater() const;
+	IDCCUpdater *updater() const;
 
 public Q_SLOTS:
 	//! @writeAcFn{UpdateController::parentWindow}
@@ -117,4 +117,4 @@ private:
 
 }
 
-#endif // QTIDDCUPDATER_UPDATECONTROLLER_H
+#endif // QTIDCCUPDATER_UPDATECONTROLLER_H

@@ -1,26 +1,26 @@
-#ifndef QTIDDCUPDATER_UPDATECONTROLLER_P_H
-#define QTIDDCUPDATER_UPDATECONTROLLER_P_H
+#ifndef QTIDCCUPDATER_UPDATECONTROLLER_P_H
+#define QTIDCCUPDATER_UPDATECONTROLLER_P_H
 
 #include "updatecontroller.h"
 #include "updateinfodialog_p.h"
 #include "progressdialog_p.h"
 
-#include "iddcupdater/iddcupdater.h"
+#include "idccupdater/idccupdater.h"
 #include "updatecontroller.h"
-#include "iddcupdater/simplescheduler_p.h"
+#include "idccupdater/simplescheduler_p.h"
 
 #include <QtCore/QPointer>
 #include <atomic>
 
-extern QtIDDCUpdater::ProgressDialog *gUpdatesProgress;
+extern QtIDCCUpdater::ProgressDialog *gUpdatesProgress;
 extern std::atomic<bool> running;
 extern std::atomic<bool> wasCanceled;
 extern QPointer<QWidget> win;
-extern QtIDDCUpdater::UpdateController::DisplayLevel gDisplayLevel;
+extern QtIDCCUpdater::UpdateController::DisplayLevel gDisplayLevel;
 extern std::atomic<bool> isUpdaterRunning;
 
 
-namespace QtIDDCUpdater
+namespace QtIDCCUpdater
 {
 
 class UpdateControllerPrivate
@@ -34,7 +34,7 @@ public:
 
 	QPointer<QWidget> window;
 
-	IDDCUpdater *mainUpdater;
+	IDCCUpdater *mainUpdater;
 	bool runAdmin;
 	bool adminUserEdit;
 	QStringList runArgs;
@@ -51,4 +51,4 @@ public:
 
 }
 
-#endif // QTIDDCUPDATER_UPDATECONTROLLER_P_H
+#endif // QTIDCCUPDATER_UPDATECONTROLLER_P_H

@@ -1,5 +1,5 @@
-#ifndef IDDCUPDATER_ATOMFEEDER_H
-#define IDDCUPDATER_ATOMFEEDER_H
+#ifndef IDCCUPDATER_ATOMFEEDER_H
+#define IDCCUPDATER_ATOMFEEDER_H
 
 #include <QtCore/QObject>
 #include <QtNetwork/QNetworkAccessManager>
@@ -9,7 +9,7 @@
 #include <QtCore/QString>
 #include <QtCore/QXmlStreamReader>
 
-namespace QtIDDCUpdater {
+namespace QtIDCCUpdater {
 
 class AtomFeeder : public QObject
 {
@@ -49,4 +49,4 @@ private:
 
 }
 
-#endif // IDDCUPDATER_ATOMFEEDER_H
+#endif // IDCCUPDATER_ATOMFEEDER_H
