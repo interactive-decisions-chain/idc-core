@@ -21,7 +21,7 @@
 #include <libdevcore/RLP.h>
 //#include "arith_uint256.h"
 /////////////////////////////////////////////
-void MineGenesis(CBlock genesis){
+/*void MineGenesis(CBlock genesis){
     // This will figure out a valid hash and Nonce if you're creating a different genesis block:
     uint256 hashTarget = CBigNum().SetCompact(Params().ProofOfWorkLimit().GetCompact()).getuint256();
     printf("Target: %s\n", hashTarget.GetHex().c_str());
@@ -43,7 +43,7 @@ void MineGenesis(CBlock genesis){
     printf("Found Genesis, Nonce: %ld, Hash: %s\n", genesis.nNonce, genesis.GetHash().GetHex().c_str());
     printf("Gensis Hash Merkle: %s\n", genesis.hashMerkleRoot.ToString().c_str());
 }
-
+*/
 
 using namespace std;
 using namespace boost::assign;
@@ -99,7 +99,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     0,
     0
 };
-042d13c016ed91528241bcff222989769417eb10cdb679228c91e26e26900eb9fd053cd9f16a9a2894ad5ebbd551be1a4bd23bd55023679be17f0bd3a16e6fbeba
+
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0"));
 static const Checkpoints::CCheckpointData dataRegtest = {
@@ -190,7 +190,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
         genesis.nVersion = 1;
-        genesis.nTime = 1557089100; //10/10/2017
+        genesis.nTime = 1557095400; //10/10/2017
         genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 0;
         genesis.hashStateRoot = uint256(h256Touint(dev::h256(""))); //

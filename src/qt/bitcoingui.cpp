@@ -303,31 +303,31 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *platformStyle, const NetworkStyle* n
         pushButtonTelegram = new QPushButton(frameSocMedia);
         pushButtonTelegram->setToolTip(tr("Go to")+" Telegram");
         connect(pushButtonTelegram, &QPushButton::clicked,
-                this, [](){QDesktopServices::openUrl(QUrl("https://t.me/IDCCcoreOfficial"));});
+                this, [](){QDesktopServices::openUrl(QUrl("https://t.me/IDChain-Official"));});
         pushButtonTelegram->setIcon(QIcon(QPixmap(":/icons/res/icons/telegram.png").scaledToHeight(STATUSBAR_ICONSIZE,Qt::SmoothTransformation)));
 
         pushButtonDiscord = new QPushButton(frameSocMedia);
         pushButtonDiscord->setToolTip(tr("Go to")+" Discord");
         connect(pushButtonDiscord, &QPushButton::clicked,
-                this, [](){QDesktopServices::openUrl(QUrl("https://discord.gg/ndUg9va"));});
+                this, [](){QDesktopServices::openUrl(QUrl("https://discord.gg/YVaZjxr"));});
         pushButtonDiscord->setIcon(QIcon(":/icons/res/icons/discord.png").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
 
         pushButtonTwitter = new QPushButton(frameSocMedia);
         pushButtonTwitter->setToolTip(tr("Go to")+" Twitter");
         connect(pushButtonTwitter, &QPushButton::clicked,
-                this, [](){QDesktopServices::openUrl(QUrl("https://twitter.com/IDCC_Coin"));});
+                this, [](){QDesktopServices::openUrl(QUrl("https://twitter.com/IDChain_Team"));});
         pushButtonTwitter->setIcon(QIcon(":/icons/res/icons/twitter.png").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
 
         pushButtonGithub = new QPushButton(frameSocMedia);
-        pushButtonGithub->setToolTip(tr("Go to")+" GitHub");
+        pushButtonGithub->setToolTip(tr("Go to")+" GitLab");
         connect(pushButtonGithub, &QPushButton::clicked,
-                this, [](){QDesktopServices::openUrl(QUrl("https://github.com/idcc-core"));});
-        pushButtonGithub->setIcon(QIcon(":/icons/res/icons/github.png").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
+                this, [](){QDesktopServices::openUrl(QUrl("https://gitlab.com/ID-Chain"));});
+        pushButtonGithub->setIcon(QIcon(":/icons/res/icons/gitlab.png").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
 
         pushButtonHelp = new QPushButton(frameSocMedia);
         pushButtonHelp->setToolTip(tr("Go to")+" Documentation Hub");
         connect(pushButtonHelp, &QPushButton::clicked,
-                this, [](){QDesktopServices::openUrl(QUrl("https://docs.idcccore.io/"));});
+                this, [](){QDesktopServices::openUrl(QUrl("https://docs.id-chain.org/"));});
         pushButtonHelp->setIcon(QIcon(":/icons/res/icons/hub.png").pixmap(STATUSBAR_ICONSIZE, STATUSBAR_ICONSIZE));
 
         auto buttons = frameSocMedia->findChildren<QPushButton* >();
