@@ -6,3 +6,12 @@ before_script:
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
 - mkdir -p ~/.ssh
+deploy_staging:
+  type: deploy
+  environment:
+    name: staging
+    url: dseed1.id-chain.org
+  script:
+    - ssh root@example.com "/root/idc-core/src/idccd stop && rm -rf /root/idc-core/ && cd /root/ && git clone git@gitlab.com:ID-Chain/idc-core.git && cd ./idc-core && ./autogen.sh && ./configure --without-gui && make"
+  only:
+- master
