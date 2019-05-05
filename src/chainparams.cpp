@@ -410,7 +410,7 @@ public:
         pchMessageStart[3] = 0xac;
         nMinerThreads = 1;
         nMaturity = 2;
-        genesis.nTime = 0
+        genesis.nTime = 0;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 1;
 
