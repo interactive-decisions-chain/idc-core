@@ -101,12 +101,12 @@ string dev::getDefaultDataDir(string _prefix)
 		if (pwd)
 			homeDir = pwd->pw_dir;
 	}
-
+	
 	if (!homeDir || strlen(homeDir) == 0)
 		dataDirPath = boost::filesystem::path("/");
 	else
 		dataDirPath = boost::filesystem::path(homeDir);
-
+	
 	return (dataDirPath / ("." + _prefix)).string();
 #endif
 }

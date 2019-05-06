@@ -16,7 +16,7 @@
 */
 #include "../GenesisInfo.h"
 
-static dev::h256 const c_genesisStateRootIDCCTestNetwork("2ebd2f054ed409f4bc77921ce642517eb574470c01772dc26658d016a4ccc825");
+static dev::h256 const c_genesisStateRootIDCCTestNetwork("");
 static std::string const c_genesisInfoIDCCTestNetwork = std::string() +
 R"E(
 {

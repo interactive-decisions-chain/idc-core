@@ -85,9 +85,9 @@ public:
 	virtual std::pair<bool, bytes> executePrecompiled(Address const& _a, bytesConstRef _in, u256 const&) const { return m_params.precompiled.at(_a).execute(_in); }
 
 ////////////////////////////////////////////////////////////// // idcc
-	void setIDCCSchedule(EVMSchedule _IDCCSchedule) const { IDCCSchedule = _IDCCSchedule; }
+	void setIDCCSchedule(EVMSchedule _idccSchedule) const { idccSchedule = _idccSchedule; }
 
-	EVMSchedule& getIDCCSchedule() const { return IDCCSchedule; }
+	EVMSchedule& getIDCCSchedule() const { return idccSchedule; }
 
 	mutable std::set<Address> deleteAddresses;
 //////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ private:
 	mutable Mutex x_options;
 	std::unordered_map<std::string, bytes> m_options;
 
-	mutable EVMSchedule IDCCSchedule; // IDCCSchedule
+	mutable EVMSchedule idccSchedule; // idcc
 
 	ChainOperationParams m_params;
 };
