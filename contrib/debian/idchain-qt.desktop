@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IDChain
+Comment=IDChain P2P Cryptocurrency
+Comment[fr]=IDChain, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=IDChain, eşten eşe kriptografik sanal para birimi
+Exec=idchain-qt %u
+Terminal=false
+Type=Application
+Icon=idchain128
+MimeType=x-scheme-handler/idchain;
+Categories=Office;Finance;

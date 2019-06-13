@@ -1,0 +1,26 @@
+[Unit]
+Description=IDChain's distributed currency daemon
+After=network.target
+
+[Service]
+User=idchain
+Group=idchain
+
+Type=forking
+PIDFile=/var/lib/idchaind/idchaind.pid
+
+ExecStart=/usr/bin/idchaind -daemon -pid=/var/lib/idchaind/idchaind.pid \
+          -conf=/etc/idchain/idchain.conf -datadir=/var/lib/idchaind
+
+ExecStop=-/usr/bin/idchain-cli -conf=/etc/idchain/idchain.conf \
+         -datadir=/var/lib/idchaind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+# /etc/conf.d/idchaind: config file for /etc/init.d/idchaind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/idchain/idchain.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/idchaind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/idchaind.pid"
+
+# Where to write idchaind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/idchaind"
+
+# User and group to own idchaind process
+#BITCOIND_USER="idchain"
+#BITCOIND_GROUP="idchain"
+
+# Path to idchaind executable
+#BITCOIND_BIN="/usr/bin/idchaind"
+
+# Nice value to run idchaind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
