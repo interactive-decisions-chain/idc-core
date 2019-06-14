@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000d15f80ecbf598f90cad5775020453c1ed4a8f6f43e152fd780d38f4fd63"));
+    (0, uint256("0x000004ea898d3118b36547cbc2c779e635bca5ff5951f41788ae4495f4c55c4b"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1560376800,// * UNIX timestamp of last checkpoint block
+    1560535200,// * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
     //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -102,7 +102,7 @@ class CMainParams : public CChainParams {
          */
         pchMessageStart[0] = 0x08;
         pchMessageStart[1] = 0x02;
-        pchMessageStart[2] = 0x01;
+        pchMessageStart[2] = 0x02;
         pchMessageStart[3] = 0x17;
         vAlertPubKey = ParseHex("0401bc08286a041282d437d68af86416aefc9018e7ff93bd9dd2d53b087332c134ba24d177ebafd9bff227df14554d687c73448b4d5e02f09e7dff25aede613795");
         nDefaultPort = 31569;
@@ -110,10 +110,10 @@ class CMainParams : public CChainParams {
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 120; // IDChain: 2 minutes
-        nTargetSpacingSlowLaunch = 5 * 90;  // IDChain: 7.5 minutes (Slow launch - Block 300)
+        nTargetSpacingSlowLaunch = 10 * 60;  // IDChain: 10 minutes (Slow launch - Block 2000)
         nTargetSpacing = 1 * 120; // IDChain: 2min after block 300
-        nLastPOWBlock = 149160;
-        nLastPOWBlockOld = 149160; // 1 year
+        nLastPOWBlock = 144840;
+        nLastPOWBlockOld = 144840; // 1 year
         nLastSeeSawBlock = 155000; // last block for seesaw rewards
         nRampToBlock = 2000; // Slow start, ramp linearly to this block
         nMaturity = 60; // 120 Minutes
@@ -135,7 +135,7 @@ class CMainParams : public CChainParams {
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "June 12, 2019 - IDChain - Open your mind for future! - Grogen";
+        const char* pszTimestamp = "June 14, 2019 - IDChain - Open your mind for future! - Grogen";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -146,13 +146,13 @@ class CMainParams : public CChainParams {
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1560376800;
+        genesis.nTime = 1560535200;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();;
-        genesis.nNonce = 151686;
+        genesis.nNonce = 886283;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000d15f80ecbf598f90cad5775020453c1ed4a8f6f43e152fd780d38f4fd63"));
-        assert(genesis.hashMerkleRoot == uint256("0xcd4d91ef23973d6918d053ec4418a90407ee99d4f1f78a8757784a4a37b3b9f8"));
+        assert(hashGenesisBlock == uint256("0x000004ea898d3118b36547cbc2c779e635bca5ff5951f41788ae4495f4c55c4b"));
+        assert(genesis.hashMerkleRoot == uint256("0x5211f71c2ca7aa346866628505e23b0c2ca14885f62394f26eeb8dca92187a47"));
 
         vSeeds.push_back(CDNSSeedData("dseed1.id-chain.org", "dseed1.id-chain.org"));      // Single node address
         vSeeds.push_back(CDNSSeedData("dseed2.id-chain.org", "dseed2.id-chain.org"));      // Single node address
@@ -161,7 +161,7 @@ class CMainParams : public CChainParams {
         vSeeds.push_back(CDNSSeedData("dseed5.id-chain.org", "dseed5.id-chain.org"));      // Single node address
         vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Single no de address
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30); // d
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30); // D
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 5);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 128);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
@@ -182,8 +182,8 @@ class CMainParams : public CChainParams {
 
         nPoolMaxTransactions = 3;
         strSporkKey = "0473edaedf047254715d9f952304f33e8b2fbe7381d5db3777016855ad8f99e87ef1da6c77536fd9eec3295289625858bf0a713cd6f2ac2c2d793c2800f23e91fa";
-        strObfuscationPoolDummyAddress = "DEssU5TsHZYw76Yd6UahGPn8W2k7eY3D7e";
-        nStartMasternodePayments = 1560636000; //Sat, 15 June 2019 22:00:00 GMT
+        strObfuscationPoolDummyAddress = "DPZnt71Ph1uwHDDu96ekpHSjNusr592foP";
+        nStartMasternodePayments = 1560794400; //Mon, 17 June 2019 22:00:00 GMT
 
         /** Zerocoin */
         zerocoinModulus = "b2275261dcaa303374af30576c5f676c8c2f1596aae7814f932f08839d442a5b2f7eaac75ffe9481321cbaae1c48703eff"
@@ -247,19 +247,19 @@ class CTestNetParams : public CMainParams {
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1560376801;
-        genesis.nNonce = 80575;
+        genesis.nTime = 1560535201;
+        genesis.nNonce = 1025783;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000004fa04362d706078ddf09e5e194a280b1d6d2608421088f18bdbdb492139"));
-        assert(genesis.hashMerkleRoot == uint256("0xcd4d91ef23973d6918d053ec4418a90407ee99d4f1f78a8757784a4a37b3b9f8"));
+        assert(hashGenesisBlock == uint256("0x000006d9daa2d69c9882b17d9887db68fae02c3dffd0d24549e3361df25e5927"));
+        assert(genesis.hashMerkleRoot == uint256("0x5211f71c2ca7aa346866628505e23b0c2ca14885f62394f26eeb8dca92187a47"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         vSeeds.push_back(CDNSSeedData("tseed1.id-chain.org", "tseed1.id-chain.org"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // Testnet idchain addresses start with 'T'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 73); // Testnet idchain addresses start with 'W'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);  // Testnet idchain script addresses start with '5' or '6'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet idchain BIP32 pubkeys start with 'DRKV'
@@ -279,8 +279,8 @@ class CTestNetParams : public CMainParams {
 
         nPoolMaxTransactions = 2;
         strSporkKey = "04f3b65bf13d74034529fba1a7005210bbe462e95ffcd88a2777de012111301db7deba4657ac1bb46654a074228e1599f3d5ffafca7b1884bb007f47e1712ddab8";
-        strObfuscationPoolDummyAddress = "TRb8nAQFX6dqDAuLjzBmfhJc5h3cstoVst";
-        nStartMasternodePayments = 1560636001; //Sat, 15 June 2019 22:00:01 GMT
+        strObfuscationPoolDummyAddress = "WZFzPKaweSADXHGdXE5YCEX2wNPBoQNRAY";
+        nStartMasternodePayments = 1560794401; //Mon, 17 June 2019 22:00:01 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
         // here because we only have a 8 block finalization window on testnet
 

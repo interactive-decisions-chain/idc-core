@@ -101,7 +101,7 @@ QTabBar {
 	color: #333
 }
 QTabBar::tab:hover:!selected {
-	background-color: #f49819
+	background-color: #f49819;
 }
 QWidget {
 	selection-background-color: #4b1f54;
@@ -182,7 +182,7 @@ QtMaterialFlatButton:hover {
 QtMaterialFlatButton:focus {} QtMaterialFlatButton:pressed {
 	background-color: #4b1f54;
 	border: 1px solid #000000;
-	background-color: #f49819
+	background-color: #f49819;
 }
 QLabel#labelEncryptionIcon,
 QLabel#labelConnectionsIcon,
@@ -196,10 +196,10 @@ QtMaterialFlatButton#labelAutoMintIcon{
 	margin: 0px
 }
 QSpinBox::up-button:hover {
-	background-color: #f49819
+	background-color: #f49819;
 }
 QSpinBox::down-button:hover {
-	background-color: #f49819
+	background-color: #f49819;
 }
 QComboBox {
 	border: 1px solid #4b1f54;

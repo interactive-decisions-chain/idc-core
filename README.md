@@ -63,7 +63,7 @@ POS Block rewards distribution
 
 | **Subsidy** | **Block** | **Reward split** <br> MN/ POS| **Notes** |
 |:------------|:----------|:-----------------|:----------|
-| 10 IDC | 149161 | 35/65%% | After POS start block time will be decreased
+| 10 IDC | 144841 | 35/65%% | After POS start block time will be decreased
 
 
 
