@@ -1,4 +1,4 @@
-from jsonrpc import ServiceProxy
+3156931569from jsonrpc import ServiceProxy
 import sys
 import string
 import getpass
@@ -11,9 +11,9 @@ rpcpass = ""
 
 
 if rpcpass == "":
-    access = ServiceProxy("http://127.0.0.1:52543")
+    access = ServiceProxy("http://127.0.0.1:31569")
 else:
-    access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:52543")
+    access = ServiceProxy("http://"+rpcuser+":"+rpcpass+"@127.0.0.1:31569")
 cmd = sys.argv[1].lower()
 
 if cmd == "backupwallet":
@@ -22,7 +22,7 @@ if cmd == "backupwallet":
         print access.backupwallet(path)
     except:
         print "\n---An error occurred---\n"
-        
+
 elif cmd == "encryptwallet":
     try:
         pwd = getpass.getpass(prompt="Enter passphrase: ")
