@@ -54,12 +54,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000004ea898d3118b36547cbc2c779e635bca5ff5951f41788ae4495f4c55c4b"));
+    (0, uint256("0x000004ea898d3118b36547cbc2c779e635bca5ff5951f41788ae4495f4c55c4b"))
+    (17500, uint256("00000000000229b6af9e428eb0ba72fcda7ed2510c90e5ac6d60ba820ef46ff3"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1560535200,// * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1562757410,// * UNIX timestamp of last checkpoint block
+    19137,    // * total number of transactions between genesis and last checkpoint
     //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -156,10 +157,11 @@ class CMainParams : public CChainParams {
 
         vSeeds.push_back(CDNSSeedData("dseed1.id-chain.org", "dseed1.id-chain.org"));      // Single node address
         vSeeds.push_back(CDNSSeedData("dseed2.id-chain.org", "dseed2.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed3.id-chain.org", "dseed3.id-chain.org")); 	 // Single node address
+        vSeeds.push_back(CDNSSeedData("dseed3.id-chain.org", "dseed3.id-chain.org")); 	   // Single node address
         vSeeds.push_back(CDNSSeedData("dseed4.id-chain.org", "dseed4.id-chain.org"));      // Single node address
         vSeeds.push_back(CDNSSeedData("dseed5.id-chain.org", "dseed5.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Single no de address
+        vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("dseed7.id-chain.org", "dseed6.id-chain.org"));      // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30); // D
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 5);
