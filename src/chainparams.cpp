@@ -155,13 +155,15 @@ class CMainParams : public CChainParams {
         assert(hashGenesisBlock == uint256("0x000004ea898d3118b36547cbc2c779e635bca5ff5951f41788ae4495f4c55c4b"));
         assert(genesis.hashMerkleRoot == uint256("0x5211f71c2ca7aa346866628505e23b0c2ca14885f62394f26eeb8dca92187a47"));
 
-        vSeeds.push_back(CDNSSeedData("dseed1.id-chain.org", "dseed1.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed2.id-chain.org", "dseed2.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed3.id-chain.org", "dseed3.id-chain.org")); 	   // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed4.id-chain.org", "dseed4.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed5.id-chain.org", "dseed5.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("dseed7.id-chain.org", "dseed6.id-chain.org"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("dseed1.id-chain.org", "dseed1.id-chain.org"));      // France (ONLINE.net)
+        vSeeds.push_back(CDNSSeedData("dseed2.id-chain.org", "dseed2.id-chain.org"));      // France (ONLINE.net)
+        vSeeds.push_back(CDNSSeedData("dseed3.id-chain.org", "dseed3.id-chain.org")); 	   // Germany (VULTR)
+        vSeeds.push_back(CDNSSeedData("dseed4.id-chain.org", "dseed4.id-chain.org"));      // USA Silicon Valley (VULTR)
+        vSeeds.push_back(CDNSSeedData("dseed5.id-chain.org", "dseed5.id-chain.org"));      // Australia (VULTR)
+        vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Singapore (VULTR)
+        vSeeds.push_back(CDNSSeedData("dseed7.id-chain.org", "dseed7.id-chain.org"));      // Russia (Dedibox)
+        vSeeds.push_back(CDNSSeedData("dseed8.id-chain.org", "dseed8.id-chain.org"));      // Canada (DigitalOcean)
+        vSeeds.push_back(CDNSSeedData("dseed9.id-chain.org", "dseed9.id-chain.org"));      // Bangalore (DigitalOcean)
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30); // D
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 5);
