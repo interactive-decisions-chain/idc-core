@@ -31,14 +31,14 @@ The IDC-Core Project is a decentralized peer-to-peer banking financial platform,
 | PoS Reward | `10 IDC` |
 | Stake Time | `48 hours` |
 | Masternode Requirement | `20,000 IDC` |
-| Masternode Reward | `35%/35% PoW/PoS` |
+| Masternode Reward | `35%/60% PoW/PoS` |
 | Port | `31569` |
 | RPC Port | `40896` |
 | Masternode Port | `31569` |
 | IDC legacy address start with | `D` |
 | Segwit | `yes` |
 | Segwit address ticker | `idc` |
-| Segwit activation | `september 2019` |
+| Segwit activation | `January, 20 2020` |
 | Premine | `1 million IDC` |
 
 
@@ -63,8 +63,16 @@ POS Block rewards distribution
 
 | **Subsidy** | **Block** | **Reward split** <br> MN/ POS| **Notes** |
 |:------------|:----------|:-----------------|:----------|
-| 10 IDC | 144841 | 35/65%% | After POS start block time will be decreased
+| 10 IDC | 99999 | 35/65%% | After POS start block time will be decreased |
+| 10 IDC | 100000 | 60/40%% | On 100000 Block we are going to change reward |
 
+## Rewards changes
+
+Here is 2 charts which are show you rewards changes in IDC 2.0:
+
+![Block to size defenition](repos/block_reward_size_defenition.png)
+
+![Block to reward type defenition](repos/block_reward_type_defenition.png)
 
 
 Instructions

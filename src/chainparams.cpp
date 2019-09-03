@@ -55,12 +55,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x000004ea898d3118b36547cbc2c779e635bca5ff5951f41788ae4495f4c55c4b"))
-    (17500, uint256("00000000000229b6af9e428eb0ba72fcda7ed2510c90e5ac6d60ba820ef46ff3"));
+    (17500, uint256("00000000000229b6af9e428eb0ba72fcda7ed2510c90e5ac6d60ba820ef46ff3"))
+    (54500, uint256("000000000015226797d18f10baa243359d2420f1d3c46dd364089aa09850024c"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1562757410,// * UNIX timestamp of last checkpoint block
-    19137,    // * total number of transactions between genesis and last checkpoint
+    1567501477,// * UNIX timestamp of last checkpoint block
+    75784,    // * total number of transactions between genesis and last checkpoint
     //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -113,9 +114,9 @@ class CMainParams : public CChainParams {
         nTargetTimespan = 1 * 120; // IDChain: 2 minutes
         nTargetSpacingSlowLaunch = 10 * 60;  // IDChain: 10 minutes (Slow launch - Block 2000)
         nTargetSpacing = 1 * 120; // IDChain: 2min after block 300
-        nLastPOWBlock = 144840;
-        nLastPOWBlockOld = 144840; // 1 year
-        nLastSeeSawBlock = 155000; // last block for seesaw rewards
+        nLastPOWBlock = 100400;
+        nLastPOWBlockOld = 100400; // 1 November 2019
+        nLastSeeSawBlock = 150400; // last block for seesaw rewards
         nRampToBlock = 2000; // Slow start, ramp linearly to this block
         nMaturity = 60; // 120 Minutes
         nMasternodeCountDrift = 4;
@@ -157,13 +158,12 @@ class CMainParams : public CChainParams {
 
         vSeeds.push_back(CDNSSeedData("dseed1.id-chain.org", "dseed1.id-chain.org"));      // France (ONLINE.net)
         vSeeds.push_back(CDNSSeedData("dseed2.id-chain.org", "dseed2.id-chain.org"));      // France (ONLINE.net)
-        vSeeds.push_back(CDNSSeedData("dseed3.id-chain.org", "dseed3.id-chain.org")); 	   // Germany (VULTR)
-        vSeeds.push_back(CDNSSeedData("dseed4.id-chain.org", "dseed4.id-chain.org"));      // USA Silicon Valley (VULTR)
-        vSeeds.push_back(CDNSSeedData("dseed5.id-chain.org", "dseed5.id-chain.org"));      // Australia (VULTR)
-        vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Singapore (VULTR)
-        vSeeds.push_back(CDNSSeedData("dseed7.id-chain.org", "dseed7.id-chain.org"));      // Russia (Dedibox)
-        vSeeds.push_back(CDNSSeedData("dseed8.id-chain.org", "dseed8.id-chain.org"));      // Canada (DigitalOcean)
-        vSeeds.push_back(CDNSSeedData("dseed9.id-chain.org", "dseed9.id-chain.org"));      // Bangalore (DigitalOcean)
+        vSeeds.push_back(CDNSSeedData("dseed3.id-chain.org", "dseed3.id-chain.org")); 	   // Lithuania (UAB Esnet)
+        vSeeds.push_back(CDNSSeedData("dseed4.id-chain.org", "dseed4.id-chain.org"));      // Russia (Spaceweb)
+        vSeeds.push_back(CDNSSeedData("dseed5.id-chain.org", "dseed5.id-chain.org"));      // Bangalore (Digital Ocean)
+        vSeeds.push_back(CDNSSeedData("dseed6.id-chain.org", "dseed6.id-chain.org"));      // Canada (Digital Ocean)
+        vSeeds.push_back(CDNSSeedData("dseed7.id-chain.org", "dseed7.id-chain.org"));      // US, San Francisco (Digital Ocean)        
+
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30); // D
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 5);

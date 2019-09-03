@@ -2138,51 +2138,51 @@ int64_t GetBlockValue(int nHeight) {
     } else if (nHeight <= 172800 && nHeight >= 86400) { // Keep reward schedule.
         nSubsidy = 10 * COIN;
     } else if (nHeight <= 259199 && nHeight > 172800) {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 9.375 * COIN;
     } else if (nHeight <= 345599 && nHeight >= 259200) {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 9 * COIN;
 
         // POS Year 1
     } else if (nHeight <= 431999 && nHeight >= 345600) {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 8.9 * COIN;
     } else if (nHeight <= 518399 && nHeight >= 432000) {
-        nSubsidy = 21.875 * COIN;
+        nSubsidy = 8.5 * COIN;
     } else if (nHeight <= 604799 && nHeight >= 518400) {
-        nSubsidy = 18.750 * COIN;
+        nSubsidy = 8 * COIN;
     } else if (nHeight <= 691199 && nHeight >= 604800) {
-        nSubsidy = 15.625 * COIN;
+        nSubsidy = 7 * COIN;
 
         // POS Year 2
     } else if (nHeight <= 777599 && nHeight >= 691200) {
-        nSubsidy = 12.50 * COIN;
+        nSubsidy = 6 * COIN;
     } else if (nHeight <= 863999 && nHeight >= 777600) {
-        nSubsidy = 10.938 * COIN;
+        nSubsidy = 5 * COIN;
     } else if (nHeight <= 950399 && nHeight >= 864000) {
-        nSubsidy = 9.375 * COIN;
+        nSubsidy = 4 * COIN;
     } else if (nHeight <= 1036799 && nHeight >= 950400) {
-        nSubsidy = 7.812 * COIN;
+        nSubsidy = 3 * COIN;
 
         // POS Year 3
     } else if (nHeight <= 1123199 && nHeight >= 1036800) {
-        nSubsidy = 6.250 * COIN;
+        nSubsidy = 2 * COIN;
     } else if (nHeight <= 1209599 && nHeight >= 1123200) {
-        nSubsidy = 5.469 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (nHeight <= 1295999 && nHeight >= 1209600) {
-        nSubsidy = 4.688 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (nHeight <= 1382399 && nHeight >= 1296000) {
-        nSubsidy = 3.906 * COIN;
+        nSubsidy = 1 * COIN;
 
         // POS Year 4
     } else if (nHeight <= 1468799 && nHeight >= 1382400) {
-        nSubsidy = 3.125 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (nHeight <= 1555199 && nHeight >= 1468800) {
-        nSubsidy = 2.734 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (nHeight <= 1641599 && nHeight >= 1555200) {
-        nSubsidy = 2.344 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (nHeight <= 1727999 && nHeight >= 1641600) {
-        nSubsidy = 1.953 * COIN;
+        nSubsidy = 1 * COIN;
     } else if (nHeight > 1728000) {
-        nSubsidy = 1.625 * COIN;
+        nSubsidy = 1 * COIN;
     } else {
         nSubsidy = 0 * COIN;
     }
@@ -2420,8 +2420,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         ret = blockValue * 0.35;
     } else if (nHeight <= 86399 && nHeight >= 57600) {
         ret = blockValue * 0.35;
-    } else if (nHeight <= nLastPOWBlock && nHeight >= 86400) {
-        ret = blockValue * 0.35;
+    } else if (nHeight <= nLastPOWBlock && nHeight >= 100000) {
+        ret = blockValue * 0.65;
     } else if (nHeight > nLastPOWBlock) {
         // if a mn count is inserted into the function we are looking for a
         // specific result for a masternode count.
